@@ -12,13 +12,28 @@ class LocalizationMapping():
         
         
         rospy.loginfo("Localization Mapping Node Started")
-        
+         
+        r = rospy.Rate(1)
         
         self.globalSensTopic = rospy.get_param("~globalsensingdata", '/fmInformation/gloSenDat')
         self.localSensTopic = rospy.get_param("~localsensingdata", '/fmInformation/locSenDat')
+        self.objDetecTopic = rospy.get_param("~objectdetectiondata", '/fmKnowledge/objDetDat')
+        self.localMapTopic = rospy.get_param("~localizationmappingdata", '/fmKnowledge/locMapDat')
+        
+        self.pub = rospy.Publisher(self.localMapTopic, String)
+        rospy.sleep(1)
+        
         rospy.Subscriber(self.globalSensTopic, String, self.on_globalSensTopic)
         self.sub = rospy.Subscriber(self.localSensTopic, String, self.on_localSensTopic)
         self.noOfConnections = self.sub.get_num_connections()
+        
+        rospy.Subscriber(self.objDetecTopic, String, self.on_objDetecTopic)
+        
+        while not rospy.is_shutdown():
+            str = "LocalizationMappingModule Data"
+            self.pub.publish(str)
+            r.sleep()
+        
         
     def on_globalSensTopic(self, msg):
         rospy.loginfo("The message received in localization Mapping from "+self.globalSensTopic+
@@ -29,6 +44,13 @@ class LocalizationMapping():
         rospy.loginfo(" The message received in localization Mapping from "+self.localSensTopic+
                       " is "+msg.data)
         rospy.sleep(20)
+        
+    def on_objDetecTopic(self, msg):
+        rospy.loginfo(" The message received in Object Detection from "+self.objDetecTopic+
+                      " is "+msg.data)
+        rospy.sleep(20)    
+        
+
 
 if __name__ == '__main__':
     #try:
