@@ -15,6 +15,14 @@
 	
 		<node pkg="ishan_globalsensing" name="ish_global_sensing" type="ish_global_sensing.py" output="screen" respawn="false"/> 
 		<param name = "globalsensingdata" value = "/fmInformation/gloSenDat"/>
+		
+		<node pkg="ishan_platform_feedback" name="ish_platf_feedback" type="ish_platf_feedback.py"/>
+		<param name="platformfeedbackdata" value="/fmInformation/plaFeeDat"/>
+		
+		<node pkg="ishan_implement_feedback" name="ish_implement_feedback" type="ish_implement_feedback.py"
+		output="screen" respawn="false"/>
+		<param name="implementfeedbackdata" value="/fmInformation/impFeeDat"/>
+		
 	</group>
 		
 	<group ns="fmProcessors">
@@ -30,7 +38,17 @@
 		<node pkg="ishan_localization_mapping" name="ish_localization_mapping" type="ish_localization_mapping.py" 
 		output="screen" respawn="false"/>
 		<param name="localizationmappingdata" value="/fmKnowledge/locMapDat"/>
-		</group>
+		
+		
+		<node pkg="ishan_implement_processing" name="ish_implement_processing" type="ish_implement_processing.py" 
+		output="screen" respawn="false"/>
+		<param name="implementprocessingdata" value="/fmKnowledge/impProDat"/>
+		
+		<node pkg="ishan_platform_processing" name="ish_platf_processing" type="ish_platf_processing.py" output="screen" respawn="false"/>
+		<param name="platformprocessingdata" value="/fmKnowledge/plaProDat"/>
+		
+	</group>
+		
 		
 		<group ns="fmDecisionMakers">
 		<!-- brief description of each node -->

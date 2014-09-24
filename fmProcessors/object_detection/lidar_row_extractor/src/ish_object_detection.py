@@ -14,7 +14,9 @@ class ObjectDetection():
         rospy.loginfo(" Object Detection Module started")
         
         r = rospy.Rate(1)
-
+        
+        rospy.on_shutdown(self.shutdown)
+        
         self.locSensTopic = rospy.get_param("~localsensingdata", '/fmInformation/locSenDat')
         self.objDetecTopic = rospy.get_param("~objectdetectiondata", '/fmKnowledge/objDetDat')
         self.locMapTopic = rospy.get_param("~localizationmappingdata", '/fmKnowledge/locMapDat')
@@ -40,7 +42,10 @@ class ObjectDetection():
         rospy.loginfo(" The message received in Object Detection from "+self.locMapTopic+" is "+msg.data)
         rospy.sleep(20)    
         
+    def shutdown(self):
         
+        rospy.loginfo("Shutting Down")
+        rospy.sleep(1)   
 
 if __name__ == '__main__':
     try:
