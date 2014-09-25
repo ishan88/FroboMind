@@ -51,7 +51,12 @@
 		
 		
 		<group ns="fmDecisionMakers">
+		
 		<!-- brief description of each node -->
+			<node pkg="ishan_monitors" name="ish_monitors" type="ish_monitors.py" 
+			output="screen" respawn="false"/>
+			<param name="monitorsdata" value="/fmDecisions/monDat"/>
+			
 		</group>
 		
 		<group ns="fmControllers">
