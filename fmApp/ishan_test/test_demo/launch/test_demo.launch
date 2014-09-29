@@ -53,22 +53,72 @@
 		<group ns="fmDecisionMakers">
 		
 		<!-- brief description of each node -->
+			
 			<node pkg="ishan_monitors" name="ish_monitors" type="ish_monitors.py" 
 			output="screen" respawn="false"/>
 			<param name="monitorsdata" value="/fmDecisions/monDat"/>
 			
+			<node pkg="ishan_mission_planner" name="ish_mission_planner" type="ish_mission_planner.py" 
+			output="screen" respawn="false"/>
+			<param name="missionplannerdata" value="/fmDecisions/misPlaDat"/>
+			
+			<node pkg="ishan_hmi" name="ish_hmi" type="ish_hmi.py" 
+			output="screen" respawn="false"/>
+			<param name="hmidata" value="/fmDecisions/hmiDat"/>
+			
+			<node pkg="ishan_behaviour" name="ish_behaviour" type="ish_behaviour.py" 
+			output="screen" respawn="false"/>
+			<param name="behaviourdata" value="/fmPlans/behDat"/>
+			
 		</group>
 		
+		
 		<group ns="fmControllers">
+		
 		<!-- brief description of each node -->
+			
+	  		<node pkg="ish_platfControllers" name="ish_platf_controllers" type="ish_platf_controllers.py" 
+			output="screen" respawn="false"/>
+			<param name="platformcontrollersdata" value="/fmSignals/plaConDat"/>
+		
+			<node pkg="ishan_implementControllers" name="ish_imp_controllers" type="ish_imp_controllers.py" 
+			output="screen" respawn="false"/>
+			<param name="implementcontrollersdata" value="/fmSignals/impConDat"/>
+		
+		
 		</group>
 	
 		<group ns="fmExecutors">
+		
 		<!-- brief description of each node -->
+			
+			<node pkg="ishan_platformExecutors" name="ish_platf_executors" type="ish_platf_executors.py" 
+			output="screen" respawn="false"/>
+			<param name="platformexecutorsdata" value="/fmCommands/plaExeDat"/>
+		
+			<node pkg="ishan_implementExecutors" name="ish_imp_executors" type="ish_imp_executors.py" 
+			output="screen" respawn="false"/>
+			<param name="implementexecutorsdata" value="/fmCommands/impExeDat"/>
+		
 		</group>
 		
 		<group ns="fmSafety">
+		
 		<!-- brief description of each node -->
+			
+			<node pkg="ish_incidenthandler" name="ish_incidenthandler" type="ish_incidenthandler.py" 
+			output="screen" respawn="false"/>
+			<param name="incidenthandlerdata" value="/fmSafety/incHanDat"/>
+			
+			<node pkg="ishan_watchdog" name="ish_watchdog" type="ish_watchdog.py" 
+			output="screen" respawn="false"/>
+			<param name="watchdogdata" value="/fmSafety/watDogDat"/>
+			
+			<node pkg="ishan_fault_diagnosis" name="ish_fault_diagnosis" type="ish_fault_diagnosis.py" 
+			output="screen" respawn="false"/>
+			<param name="faultdiagnosisdata" value="/fmSafety/fauDiaDat"/>
+		
+		
 		</group>
 		
 		<group ns="fmLib">
