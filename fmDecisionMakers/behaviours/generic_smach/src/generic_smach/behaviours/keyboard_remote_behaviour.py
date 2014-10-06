@@ -35,3 +35,6 @@ def build(hmi):
     with behaviour:
        smach.StateMachine.add('REMOTE_CONTROL', key_states.remoteControlState(hmi), transitions={'enterAutomode':'REMOTE_CONTROL','preempted':'preempted'})
     return behaviour
+
+
+
