@@ -151,7 +151,7 @@ class log_node():
 			roll = atan2((2*qy*qz) + (2*qx*qw), sqw + sqz - sqy - sqx)
 
 			self.imu.append([yaw, pitch, roll, ax, ay, az])
-
+			
 	def on_pose_topic(self, msg):
 		# extract yaw, pitch and roll from the quaternion
 		qx = msg.pose.pose.orientation.x

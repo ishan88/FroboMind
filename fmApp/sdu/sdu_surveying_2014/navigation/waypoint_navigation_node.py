@@ -145,7 +145,15 @@ class WptNavNode():
 		ramp_min_turn_vel = rospy.get_param("~ramp_min_turn_velocity", 0.05)
 		stop_nav_at_dist = rospy.get_param("~stop_navigating_at_distance", 0.1)
 
-		self.wptnav = waypoint_navigation(self.update_rate, self.w_dist, drive_kp, drive_ki, drive_kd, drive_ff, drive_max_output, turn_kp, turn_ki, turn_kd, turn_ff, turn_max_output, max_linear_vel, max_angular_vel, self.wpt_def_tolerance, self.wpt_def_drive_vel, self.wpt_def_turn_vel, turn_start_at_heading_err, turn_stop_at_heading_err, ramp_drive_vel_at_dist, ramp_min_drive_vel, ramp_turn_vel_at_angle, ramp_min_turn_vel, stop_nav_at_dist, self.debug)
+		self.wptnav = waypoint_navigation(self.update_rate, self.w_dist, drive_kp, drive_ki, 
+                                          drive_kd, drive_ff, drive_max_output, turn_kp, turn_ki, 
+                                          turn_kd, turn_ff, turn_max_output, max_linear_vel, 
+                                          max_angular_vel, self.wpt_def_tolerance, 
+                                          self.wpt_def_drive_vel, self.wpt_def_turn_vel, 
+                                          turn_start_at_heading_err, turn_stop_at_heading_err, 
+                                          ramp_drive_vel_at_dist, ramp_min_drive_vel, 
+                                          ramp_turn_vel_at_angle, ramp_min_turn_vel,
+                                           stop_nav_at_dist, self.debug)
 
 		self.wptlist = waypoint_list()
 		self.wptlist_loaded = False

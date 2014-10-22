@@ -29,12 +29,25 @@ import smach
 import smach_ros
 from wii_interface import wii_interface
 from generic_smach.states import key_states
+import rospy
 
-def build(hmi):
+def build():
+    rospy.loginfo("Inside Build")
     behaviour = smach.StateMachine(outcomes=['preempted'])            
     with behaviour:
-       smach.StateMachine.add('REMOTE_CONTROL', key_states.remoteControlState(hmi), transitions={'enterAutomode':'REMOTE_CONTROL','preempted':'preempted'})
-    return behaviour
+       smach.StateMachine.add('REMOTE_CONTROL', key_states.remoteControlState(), transitions={'enterAutomode':'REMOTE_CONTROL','preempted':'preempted'})
+   # return behaviour
+
+   
+    sis = smach_ros.IntrospectionServer('server_name', sm, '/SM_ROOT')
+    sis.start()
+    outcome = behaviour.execute()
+    rospy.spin()
+    sis.stop()  
+    
+if __name__ == '__main__':
+    build()
+
 
 
 

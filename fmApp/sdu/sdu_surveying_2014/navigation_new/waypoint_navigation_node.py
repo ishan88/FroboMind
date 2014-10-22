@@ -41,13 +41,14 @@ import numpy as np
 from std_msgs.msg import Bool
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TwistStamped
-from sensor_msgs.msg import Joy
+from sensor_msgs.msg import Joy # data obtained from a joystick
 from msgs.msg import FloatStamped, FloatArrayStamped, waypoint_navigation_status
 from math import pi, atan2
 from waypoint_list import waypoint_list
 from waypoint_navigation import waypoint_navigation
 
 class WptNavNode():
+     # dissected
 	def __init__(self):
 		# defines
 		self.update_rate = 20 # set update frequency [Hz]
@@ -58,7 +59,7 @@ class WptNavNode():
 		self.state = self.STATE_IDLE
 		self.state_prev = self.state
 		self.automode_warn = False
-		self.wait_after_arrival = 0.0
+		self.wait_after_arrival = 0.0 # wait after the robot reaches a wpt
 		self.wait_timeout = 0.0
 		self.status = 0
 		self.wpt = False
@@ -116,39 +117,47 @@ class WptNavNode():
 		self.pid_publish_count = 0
 
 		# configure waypoint navigation
-		self.w_dist = rospy.get_param("/diff_steer_wheel_distance", 0.2) # [m]
-		drive_kp = rospy.get_param("~drive_kp", 1.0)
-		drive_ki = rospy.get_param("~drive_ki", 0.0)
-		drive_kd = rospy.get_param("~drive_kd", 0.0)
-		drive_ff = rospy.get_param("~drive_feed_forward", 0.0)
+		self.w_dist = rospy.get_param("/diff_steer_wheel_distance", 0.2) # [m] distance between the two wheels
+		drive_kp = rospy.get_param("~drive_kp", 1.0)# driving constant for proportion term in pid controller
+		drive_ki = rospy.get_param("~drive_ki", 0.0)# driving constant for integral term in pid controller
+		drive_kd = rospy.get_param("~drive_kd", 0.0)# driving constant for differential term in pid controller
+		drive_ff = rospy.get_param("~drive_feed_forward", 0.0)# feed forward velocity. It determines the velocity of the robot in response to some stimuli.
+                                                              # like for example when a door is opened a feedforward control would heat the room before
+                                                              # it gets too cold
 		drive_max_output = rospy.get_param("~drive_max_output", 0.3)
-		turn_kp = rospy.get_param("~turn_kp", 1.0)
-		turn_ki = rospy.get_param("~turn_ki", 0.0)
-		turn_kd = rospy.get_param("~turn_kd", 0.2)
-		turn_ff = rospy.get_param("~turn_feed_forward", 0.0)
+		turn_kp = rospy.get_param("~turn_kp", 1.0)# turning const for proportion term in pid controller
+		turn_ki = rospy.get_param("~turn_ki", 0.0)# turning const for integral term in pid controller
+		turn_kd = rospy.get_param("~turn_kd", 0.2)# turning const for differential term in pid controller
+		turn_ff = rospy.get_param("~turn_feed_forward", 0.0)# feed forward term for turning
 		turn_max_output = rospy.get_param("~turn_max_output", 0.5)
 
 		max_linear_vel = rospy.get_param("~max_linear_velocity", 0.4)
 		max_angular_vel = rospy.get_param("~max_angular_velocity", 0.4)
 
-		self.wpt_def_tolerance = rospy.get_param("~wpt_default_tolerance", 0.5)
-		self.wpt_def_drive_vel = rospy.get_param("~wpt_default_drive_velocity", 0.5)
-		self.wpt_def_turn_vel = rospy.get_param("~wpt_default_turn_velocity", 0.3)
-		self.wpt_def_wait_after_arrival = rospy.get_param("~wpt_default_wait_after_arrival", 0.0)
-		self.wpt_def_implement = rospy.get_param("~wpt_default_implement_command", 0.0)
+		self.wpt_def_tolerance = rospy.get_param("~wpt_default_tolerance", 0.5)#default tolerance when the robot reaches the waypoint
+		self.wpt_def_drive_vel = rospy.get_param("~wpt_default_drive_velocity", 0.5)# default driive velocity when the robot reaches the wpt
+		self.wpt_def_turn_vel = rospy.get_param("~wpt_default_turn_velocity", 0.3)# default turn velocity when the robot reaches the wpt
+		self.wpt_def_wait_after_arrival = rospy.get_param("~wpt_default_wait_after_arrival", 0.0)# default wait time after robot reaches the wpt
+		self.wpt_def_implement = rospy.get_param("~wpt_default_implement_command", 0.0) # default value for the implement stored in the implement param which is a floatstamped message
 
-		turn_start_at_heading_err = rospy.get_param("~turn_start_at_heading_err", 20.0)
-		turn_stop_at_heading_err = rospy.get_param("~turn_stop_at_heading_err", 2.0)
-		ramp_drive_vel_at_dist = rospy.get_param("~ramp_drive_velocity_at_distance", 1.0)
-		ramp_min_drive_vel = rospy.get_param("~ramp_min_drive_velocity", 0.1)
-		ramp_turn_vel_at_angle = rospy.get_param("~ramp_turn_velocity_at_angle", 25.0)
-		ramp_min_turn_vel = rospy.get_param("~ramp_min_turn_velocity", 0.05)
-		stop_nav_at_dist = rospy.get_param("~stop_navigating_at_distance", 0.1)
+		turn_start_at_heading_err = rospy.get_param("~turn_start_at_heading_err", 20.0)# Not Clear
+		turn_stop_at_heading_err = rospy.get_param("~turn_stop_at_heading_err", 2.0)# Not Clear
+		ramp_drive_vel_at_dist = rospy.get_param("~ramp_drive_velocity_at_distance", 1.0)# velocity of the robot when it reaches a ramp
+		ramp_min_drive_vel = rospy.get_param("~ramp_min_drive_velocity", 0.1)# min vel of the robot when it reaches the ramp
+		ramp_turn_vel_at_angle = rospy.get_param("~ramp_turn_velocity_at_angle", 25.0)# turn velocity of the robot in a ramp
+		ramp_min_turn_vel = rospy.get_param("~ramp_min_turn_velocity", 0.05)# min turn vel of the robot in a ramp
+		stop_nav_at_dist = rospy.get_param("~stop_navigating_at_distance", 0.1)# the distance at which the robot should stop navigating. Not clear
 
-		self.wptnav = waypoint_navigation(self.update_rate, self.w_dist, drive_kp, drive_ki, drive_kd, drive_ff, drive_max_output, turn_kp, turn_ki, turn_kd, turn_ff, turn_max_output, max_linear_vel, max_angular_vel, self.wpt_def_tolerance, self.wpt_def_drive_vel, self.wpt_def_turn_vel, turn_start_at_heading_err, turn_stop_at_heading_err, ramp_drive_vel_at_dist, ramp_min_drive_vel, ramp_turn_vel_at_angle, ramp_min_turn_vel, stop_nav_at_dist, self.debug)
+		self.wptnav = waypoint_navigation(self.update_rate, self.w_dist, drive_kp, drive_ki, drive_kd, drive_ff, drive_max_output, turn_kp, 
+                                          turn_ki, turn_kd, turn_ff, turn_max_output, max_linear_vel, max_angular_vel, self.wpt_def_tolerance, 
+                                          self.wpt_def_drive_vel, self.wpt_def_turn_vel, turn_start_at_heading_err, turn_stop_at_heading_err, 
+                                          ramp_drive_vel_at_dist, ramp_min_drive_vel, ramp_turn_vel_at_angle, ramp_min_turn_vel,
+                                          stop_nav_at_dist, self.debug)# waypoint navigation is called which is another class and these params
+                                                                       # are passed to it for performing the actual navigation of the robot 
+                                                                       # Initializes the values for wpt navigation and for pid control
 
-		self.wptlist = waypoint_list()
-		self.wptlist_loaded = False
+		self.wptlist = waypoint_list()# list of waypoints are loaded
+		self.wptlist_loaded = False# status whether the waypoints have been loaded or not. Initially set to false
 
 		# setup subscription topic callbacks
 		rospy.Subscriber(self.automode_topic, Bool, self.on_automode_message)
@@ -156,35 +165,40 @@ class WptNavNode():
 		rospy.Subscriber(self.joy_topic, Joy, self.on_joy_message)
 
 		# call updater function
-		self.r = rospy.Rate(self.update_rate)
+		self.r = rospy.Rate(self.update_rate)# update rate 20Hz
 		self.updater()
 
+     # dissected
 	def load_wpt_list (self):
-		self.wptlist.load_from_csv_ne_format ('waypoints.txt')
-		(numwpt, nextwpt) = self.wptlist.status()
-		self.prev_wpt = False 
-		self.wpt = False 
+		self.wptlist.load_from_csv_ne_format ('waypoints.txt')# loads the waypoints from the text file
+		(numwpt, nextwpt) = self.wptlist.status()# numwpt - contains the total no of params present in the waypoints file. next wpt that robot should move to
+		self.prev_wpt = False # No previous wpt. Initially false
+		self.wpt = False  # current wpt also set to false initially
 		rospy.loginfo(rospy.get_name() + ": %d waypoints loaded" % numwpt)
-
+    
+     # dissected
 	def update_implement_value (self):
-		if self.wpt[self.wptnav.W_IMPLEMENT] != self.IMPLEMENT_INVALID:
+		if self.wpt[self.wptnav.W_IMPLEMENT] != self.IMPLEMENT_INVALID:# checks if the wpt param contains the index assigned to W_Implement which is
+                                                                       # and checks the value assigned to it. If it is not equal to implement_invalid, then it assigns the implement variable which is a float stamped message with the value contained at index 9 in the waypoints.txt file
 			self.implement.data = self.wpt[self.wptnav.W_IMPLEMENT]
 		else:
-			self.implement.data = self.wpt_def_implement
-
+			self.implement.data = self.wpt_def_implement # If the text file contains an implement invalid data then pass the default value of the implement to the implement variable
+     
+     # dissected
 	def goto_next_wpt (self):
-		self.prev_wpt = self.wpt
-		self.wpt = self.wptlist.get_next()
+		self.prev_wpt = self.wpt # set the previous waypoint to the current waypoint
+		self.wpt = self.wptlist.get_next() # self.wpt contains the next param from the wpt list file
 		if self.wpt != False:
 			self.update_implement_value()
 			self.wptnav.navigate(self.wpt, self.prev_wpt)
 			rospy.loginfo(rospy.get_name() + ": Navigating to waypoint: %s (distance %.2fm, bearing %.0f)" % (self.wpt[self.wptnav.W_ID], self.wptnav.dist, self.wptnav.bearing*180.0/pi))
-		else:
+		else:# bearing is the angle between the robot's forward direction and the direction from the robot to the target location in degrees
 			rospy.loginfo(rospy.get_name() + ": End of waypoint list reached")
 			self.wptnav.stop()
-
+    
+     # dissected
 	def goto_previous_wpt (self):
-		(wpt, prev_wpt) = self.wptlist.get_previous()
+		(wpt, prev_wpt) = self.wptlist.get_previous()# gets the previous waypoint from the waypoints txt file
 		if wpt != False:
 			self.wpt = wpt
 			self.prev_wpt = prev_wpt
@@ -194,6 +208,7 @@ class WptNavNode():
 		else:
 			rospy.loginfo(rospy.get_name() + ": This is the first waypoint")
 
+     # dissected
 	def on_automode_message(self, msg):
 		if msg.data == True: # if autonomous mode requested
 			if self.state == self.STATE_IDLE:
@@ -218,7 +233,8 @@ class WptNavNode():
 				self.state = self.STATE_IDLE					
 				self.wptnav.standby() 
 				rospy.loginfo(rospy.get_name() + ": Switching to manual control")			
-			
+	
+     # dissected		
 	def on_pose_message(self, msg):
 		qx = msg.pose.pose.orientation.x
 		qy = msg.pose.pose.orientation.y
@@ -227,6 +243,7 @@ class WptNavNode():
 		yaw = atan2(2*(qx*qy + qw*qz), qw*qw + qx*qx - qy*qy - qz*qz)
 		self.wptnav.state_update (msg.pose.pose.position.x, msg.pose.pose.position.y, yaw, msg.twist.twist.linear.x)
 
+     # dissected
 	def on_joy_message(self, msg):
 		if int(msg.buttons[2]) != self.wii_a:
 			self.wii_a =  int(msg.buttons[2])
@@ -241,16 +258,19 @@ class WptNavNode():
 			self.wii_home =  int(msg.buttons[10])
 			self.wii_home_changed = True
 	
+     # dissected
 	def publish_cmd_vel_message(self):
 		self.twist.header.stamp = rospy.Time.now()
 		self.twist.twist.linear.x = self.linear_vel
 		self.twist.twist.angular.z = self.angular_vel		
 		self.cmd_vel_pub.publish (self.twist)
 
+     # dissected
 	def publish_implement_message(self):
 		self.implement.header.stamp = rospy.Time.now()
 		self.implement_pub.publish (self.implement)
 
+     # dissected
 	def publish_status_message(self):
 		self.wptnav_status.header.stamp = rospy.Time.now()
 		self.wptnav_status.state = self.state
@@ -291,18 +311,20 @@ class WptNavNode():
 			self.wptnav_status.mode = -1			
 		self.wptnav_status_pub.publish (self.wptnav_status)
 
+     # dissected
 	def publish_pid_message(self):
 		if self.state == self.STATE_NAVIGATE:
 			self.pid.header.stamp = rospy.Time.now()
 			self.pid.data = self.wptnav.pid_status
 			self.pid_pub.publish (self.pid)
 
+     # dissected
 	def updater(self):
 		while not rospy.is_shutdown():
 			if self.wii_a == True and self.wii_a_changed == True:
 				self.wii_a_changed = False
-				rospy.loginfo(rospy.get_name() + ': Current position: %.3f %.3f' % (self.wptnav.pose[0], self.wptnav.pose[1]))
-			if self.wii_home == True and self.wii_home_changed == True:
+				rospy.loginfo(rospy.get_name() + ': Current position: %.3f %.3f' % (self.wptnav.pose[0], self.wptnav.pose[1]))# prints the inital pose of the robot 
+			if self.wii_home == True and self.wii_home_changed == True:      # waypoint list has been reloaded and been signalled from the wiimote                                                                
 				self.wii_home_changed = False
 				rospy.loginfo(rospy.get_name() + ": User reloaded waypoint list")
 				self.load_wpt_list()				
@@ -316,7 +338,7 @@ class WptNavNode():
 				rospy.loginfo(rospy.get_name() + ": User selected previous waypoint")
 				self.goto_previous_wpt()
 
-			if self.state == self.STATE_NAVIGATE:
+			if self.state == self.STATE_NAVIGATE:# if the robot is running on automode. I am not sure it can come here I think even if you are running through wiimote.
 				(self.status, self.linear_vel, self.angular_vel) = self.wptnav.update(rospy.get_time())
 				if self.status == self.wptnav.UPDATE_ARRIVAL:
 					rospy.loginfo(rospy.get_name() + ": Arrived at waypoint: %s (error %.2fm)" % (self.wpt[self.wptnav.W_ID], self.wptnav.dist))
@@ -341,7 +363,7 @@ class WptNavNode():
 
 			elif self.state == self.STATE_WAIT:
 				if rospy.get_time() > self.wait_timeout:
-					self.state = self.STATE_NAVIGATE 		
+					self.state = self.STATE_NAVIGATE # So, when a manual mode is requested the control comes here when the wait timeout is reached. Here it switches the state to the Navigate State.		
 					self.goto_next_wpt()
 				else:				
 					self.linear_vel = 0.0

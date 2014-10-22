@@ -46,10 +46,10 @@ Reference: https://docs.google.com/document/d/1nXmZ2Yz4_EzWaQ4GabGi4fah6phSRXDoe
 class waypoint_list():
 	def __init__(self):
 		self.IMPLEMENT_INVALID = -10000000.0
-		self.wpts = []
-		self.next = 0
+		self.wpts = [] # contains the set of wpts. initially set to null
+		self.next = 0 # next wpt
 
-	def load_from_csv_ne_format(self, filename):
+	def load_from_csv_ne_format(self, filename):# loads the waypoints from the file and obtains values of easting,northing, yaw, mode, name, vel, angular vel
 		self.wpts = []
 		lines = [line.rstrip('\n') for line in open(filename)] # read the file and strip \n
 		wpt_num = 0
@@ -92,7 +92,8 @@ class waypoint_list():
 					else:
 						implement = self.IMPLEMENT_INVALID
 
-					self.wpts.append([e, n, yaw, name, mode, tol, lin_spd, ang_spd, wait, implement])
+					self.wpts.append([e, n, yaw, name, mode, tol, lin_spd, ang_spd, wait, implement]) # Appends to the waypoints list all the values
+																									  # present in the waypoints.txt file
 				else:
 					print 'Erroneous waypoint'
 		self.next = 0
@@ -100,8 +101,9 @@ class waypoint_list():
 	#def add (self, easting, northing, yaw, wptid, mode, tolerance, lin_spd, ang_spd, implement, wait): 
 	#	self.wpts.append([easting, northing, yaw, wptid, mode, tolerance, lin_spd, ang_spd, implement, wait])
 
-	def get_next (self):	
-		if self.next < len(self.wpts):
+	def get_next (self):	# gets the next waypoint
+		if self.next < len(self.wpts):# if the next wpt which is initally 0 is less than the length of params in the self.wpts variable which is 
+									  # initally also true then set the current waypoint as the next value in the wpts list
 			wpt = self.wpts[self.next]
 			self.next += 1
 		else:
@@ -119,5 +121,6 @@ class waypoint_list():
 		return (wpt, prev_wpt)
 
 	def status (self):		
-		return (len(self.wpts), self.next)
+		return (len(self.wpts), self.next)# returns the length of the parameters obtained from the waypoints.txt file and the value of next parameter
+										  # the value of next param is initially set to 0
 

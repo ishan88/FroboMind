@@ -1,0 +1,88 @@
+
+waypoint_navigation_node
+
+
+NMEA - National Marine Electronics Association
+
+Initial State - self.state= Idle
+
+Previous State - self.state_prev=Idle
+
+Initial Waypoint - self.wpt=False
+
+Previous Waypoint - self.prev_wpt=False
+
+Position - self.pos=False
+
+Bearing - self.bearing=False
+
+TwistStamped - a message containing linear and angular velocity parameters. variable - self.twist.
+
+waypoint_navigation_status is a custom made message type. Inside fmLib/msgs/msg. From this msg file an automatic python file is generated named
+waypoint_navigation_status.py. In this msg type the values for navigating, waiting and idle state has been defined as 1) 0=idle, 1=navigate, 2=wait.
+It is represented by self.wptnav_status. 
+
+Paramaters - 	1) drive_kp, drive_ki, drive_kd, drive_ff,drive_max_output,turn_kp,turn_ki,turn_kd,turn_ff,turn_max_output are all parameters that are set
+					on the wheel.
+				2) wpt_def_tolerance
+				
+PID - is a way to control the errors in the navigation of the robot. So the differential term 'd' calculates the error in the movement of the robot
+when it moves to a location b from a. The integral term 'i' calculates the accumulated errors in the movement of the robot in the past. The 
+proportion term is the distance that the robot wants to move. 
+	
+Navigation states	1) Stop - Initial State and Previous State
+					2) Standby
+					3) Drive
+					4) Turn
+
+1) Stop
+2) If user reloaded wpt list from wiimote then load the wayppoint list from the waypoints.txt file.
+3) Update the Implement Value
+4) Navigate to the next wpt
+	1) Obtain the wpt tolerance values, the linear velcoities from the text file, turn velocities, etc
+	2) Calculate length of the line between a and b wpt
+	3) Calculates the distance to starting point, distance to the destination from its current pose
+	4) Calculates the bearing between the starting and the destination points
+	5) Calculates the heading error which is the difference between the bearing and the current angle.
+	6) Calculates the nearest distance from the robot's current position from the ab line and the point on the ab line which is closest
+	7) if closest point distance is greater than length of the ab line then closest point is point b. 
+	8) If closest point distance is very small then it is assumed to be on that point and destination becomes 'b'
+	9) Else, calcluate whether robot is on the left of the ab line.
+	10) Calculate target bearing and distance
+	11) Subtract the distance of the robot from the closest point on the ab line and the distance of the robot from the target position
+	12) Calculate the target waypoint
+	13) Calculate the target heading error which is the diff between the target bearing angle and the robot's current bearing angle
+	14) Reset PID
+	15) Go to Step 3 inside navigate
+	16) If target heading error is greater than start heading error then the robot needs to turn
+	17) Calculate the PID errors. 
+	18) Calculates the angular velocity of the robot for turning 
+	19) Calculates the Ramp velcoities - -  not clear what is ramp
+5) If no next wpt, then stop robot	
+6) If up button pressed from wiimote then it means the user has skipped the waypoint and the robot should navigate to the next waypoint. Go to Step 2		
+7) If down button pressed take the previous waypoint from the file and go to step 2
+8) If automode message then if state is idle and a valid pose is available then switch to navigate state and go to step 2.
+9) If no valid pose is available then go issue a warning message
+10) if robot state is standby then resume robot
+11) If manual mode request, then if robot is not in idle state then make the robot state as idle and instruct to go to standby mode.
+12) If robot running on automode check if the robot has reached the waypoint. If reached then robot waits at the waypoint for a set time as obtained
+	the waypoint list. Then go to step 2
+13) If not reached the wpt then continue to drive publish the cmd_vel message, then limit the velocity of the robot to keep it within default values
+14) If in wait state and wait timeout reqached then go to Step 2
+15) Publish the status message of all the parameters of the robot in the custom message format as defined by .msg file waypoint_navigation_status
+16) Publish pid Message
+
+					
+
+
+
+
+
+Subscriptions - 1) Automode
+				2) Pose
+				3) Joy from fmLib
+				
+Published topics - 1) Velocity Command - fmCommand/cmd_vel
+				   2) Implement Command - fmCommand/Implement
+				   3) Waypoint Navigation Status - fmInformation/wptnav_status
+				   4) PID - fmInformation/wptnav_pid
