@@ -36,6 +36,7 @@
 """
 
 # imports
+# import pdb
 import rospy
 import numpy as np
 from std_msgs.msg import Bool
@@ -90,8 +91,8 @@ class WptNavNode():
 
 		# get parameters
 		self.debug = rospy.get_param("~print_debug_information", 'true') 
- 		if self.debug:
-			rospy.loginfo(rospy.get_name() + ": Debug enabled")
+#  		if self.debug:
+#              rospy.loginfo(rospy.get_name() + ": Debug enabled")
 		self.status_publish_interval = rospy.get_param("~status_publish_interval", 0) 
 		self.pid_publish_interval = rospy.get_param("~pid_publish_interval", 0) 
 

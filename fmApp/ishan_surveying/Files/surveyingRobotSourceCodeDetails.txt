@@ -72,12 +72,7 @@ Navigation states	1) Stop - Initial State and Previous State
 15) Publish the status message of all the parameters of the robot in the custom message format as defined by .msg file waypoint_navigation_status
 16) Publish pid Message
 
-					
-
-
-
-
-
+		
 Subscriptions - 1) Automode
 				2) Pose
 				3) Joy from fmLib
@@ -86,3 +81,33 @@ Published topics - 1) Velocity Command - fmCommand/cmd_vel
 				   2) Implement Command - fmCommand/Implement
 				   3) Waypoint Navigation Status - fmInformation/wptnav_status
 				   4) PID - fmInformation/wptnav_pid
+				   
+Debugging Test Cases
+
+1) First Test - When the Robot is in Idle State
+	1) S1		   
+	2) 			   
+
+Debiugging results
+1) Initially, starting position variable start and variable a are both set to false. The robot's initial
+start position is its pose itself.
+
+2) Initally, robot's pose is 0.0. 
+
+3) self.start contains the start position of the robot. So, everytime the robot keeps moving forward its distance
+from this start position is calculated to know whether it has reached the dest.
+
+4) First time when automode requested then it goes into the navigate method. This method initializes the ab line length
+Second time and afterwards whenever robot is in automode then directly the update method is called.
+				   
+5) 	ab_len - is the total length of ab line
+	dist = distance between destination and robot's current pose
+	dist_start = distance between start position and robot's current pose. Investigate further
+	ab_dist_to_pose = distance of robot from the closest point on ab line
+	
+6) Ramp variables are used to calculate the velocities of the robot when the robot is turning or moving to destination or approaching a waypoint
+				   
+				   
+				   
+				   
+				   

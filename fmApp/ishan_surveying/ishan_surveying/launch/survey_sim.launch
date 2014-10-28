@@ -1,0 +1,51 @@
+<!-- FroboScout launch file -->
+
+<launch>
+
+	<!-- FroboScout parameters --> 
+	<param name="diff_steer_wheel_distance" value="0.5"/>
+	<param name="ticks_per_meter_left" value="2627" />
+	<param name="ticks_per_meter_right" value="2627" />
+
+	<!-- node pkg="rosbag" name="rosbag_record" type="record" args="-a"/-->
+
+	
+
+	<group ns="fmDecisionMakers">
+		<node pkg="sdu_surveying_2014" name="mission" type="keyboard_mission_node.py" output="screen">
+			<param name="keyboard_sub" value="/fmHMI/keyboard" />
+			<param name="automode_pub" value="/fmDecision/automode" />
+    		<param name="deadman_pub" value="/fmCommand/deadman" />
+			<param name="cmd_vel_pub" value="/fmCommand/cmd_vel" />
+            <param name="max_linear_velocity" value="1.0"/>
+            <param name="max_angular_velocity" value="0.4"/>
+            <param name="linear_velocity_step" value="0.1"/>
+            <param name="angular_velocity_step" value="0.1"/>
+		</node>
+	</group>
+
+	<group ns="fmApp">
+		<node pkg="ishan_surveying" name="froboscout_sim" type="frobit_sim_node.py" output="screen" >
+    		<param name="deadman_sub" value="/fmCommand/deadman" />
+			<param name="cmd_vel_sub" value="/fmCommand/cmd_vel" />
+			<param name="odom_reset_sub" value="/fmInformation/odom_reset" />
+			<param name="pose_pub" value="/fmKnowledge/pose" />
+            <param name="max_linear_acceleration" value="1.0"/>
+            <param name="max_angular_acceleration" value="1.0"/>
+			<param name="wheel_feedback_left_pub" value="/fmInformation/wheel_feedback_left" />
+			<param name="wheel_feedback_right_pub" value="/fmInformation/wheel_feedback_right" />
+			<param name="publish_wheel_feedback_rate" value="50" />
+		</node>
+
+	 	<node pkg="keyboard_interface" type="keyboard_node" name="keyboard">
+			<param name="keyboard_pub" value="/fmHMI/keyboard" />
+		</node>
+
+		<!--node pkg="real_time_analyze" name="rt_node" type="real_time_analyze_node.py" output="screen" >
+			<param name="timing_pub" value="/fmInformation/rt_timing"/>
+			<param name="device" value="/dev/rt_analyze" />	
+        </node-->
+	</group>
+		
+</launch>
+

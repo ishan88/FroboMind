@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(test_demo)
+project(ishan_surveying)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -44,11 +45,12 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+  add_message_files(
+    FILES
+    FloatArrayStamped.msg
+	FloatStamped.msg
+	waypoint_navigation_status.msg
+  )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -65,10 +67,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+  generate_messages(
+    DEPENDENCIES
+    std_msgs
+  )
 
 ###################################
 ## catkin specific configuration ##
@@ -80,10 +82,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES test_demo
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES ishan_surveying
+  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
+  DEPENDS system_lib
 )
 
 ###########
@@ -98,19 +100,19 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(test_demo
-#   src/${PROJECT_NAME}/test_demo.cpp
+# add_library(ishan_surveying
+#   src/${PROJECT_NAME}/ishan_surveying.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(test_demo_node src/test_demo_node.cpp)
+# add_executable(ishan_surveying_node src/ishan_surveying_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(test_demo_node test_demo_generate_messages_cpp)
+  #add_dependencies(waypoint_navigation_node FloatStamped_gencpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(test_demo_node
+# target_link_libraries(ishan_surveying_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -129,7 +131,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS test_demo test_demo_node
+# install(TARGETS ishan_surveying ishan_surveying_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -154,7 +156,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_test_demo.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_ishan_surveying.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

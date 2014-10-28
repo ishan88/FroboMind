@@ -173,6 +173,7 @@ class mission_node():
 	def publish_automode_message(self):
 		self.automode_msg = (self.state == self.STATE_AUTO)
 		self.automode_pub.publish (self.automode_msg)
+# 		rospy.loginfo("Automode message is  "+str(self.automode_msg))
 
 	def publish_cmd_vel_message(self):
 		self.cmd_vel_msg.header.stamp = rospy.Time.now()

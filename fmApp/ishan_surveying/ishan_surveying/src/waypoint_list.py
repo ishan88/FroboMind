@@ -49,7 +49,7 @@ class waypoint_list():
 		self.wpts = []
 		self.next = 0
 
-	def load_from_csv_ne_format(self, filename):
+	def load_from_csv_ne_format(self, filename):# Loads the waypoints from the file and appends it to a variable. The values of the variables like linear velocity, angular vel if not specified in the file then it takes default values. 
 		self.wpts = []
 		lines = [line.rstrip('\n') for line in open(filename)] # read the file and strip \n
 		wpt_num = 0
@@ -64,11 +64,11 @@ class waypoint_list():
 						yaw = float(data[2])
 					else:
 						yaw = -1
+					mode = 1 # default is 'minimize cross track error'
 					if len(data) >= 4 and data[3] != '':
 						name = data[3]
 					else:
 						name = 'Wpt%d' % (wpt_num)
-					mode = 1 # default is 'minimize cross track error'
 					if  len(data) >= 5 and data[4] == 'STWP': # 'straight to waypoint' 
 						mode = 0 
 					if len(data) >= 6 and data[5] != '':  # waypoint reach tolerance
@@ -78,7 +78,8 @@ class waypoint_list():
 					if  len(data) >= 7 and data[6] != '': # linear speed
 						lin_spd = float(data[6])
 					else:
-						lin_spd = 0.0 
+ 
+ 						lin_spd = 0.0 
 					if  len(data) >= 8 and data[7] != '': # angular speed
 						ang_spd = float(data[7])
 					else:
@@ -94,7 +95,7 @@ class waypoint_list():
 
 					self.wpts.append([e, n, yaw, name, mode, tol, lin_spd, ang_spd, wait, implement])
 				else:
-					print 'Erroneous waypoint'
+					print ('Erroneous waypoint')
 		self.next = 0
 
 	#def add (self, easting, northing, yaw, wptid, mode, tolerance, lin_spd, ang_spd, implement, wait): 
