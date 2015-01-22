@@ -161,7 +161,7 @@ class WptNavNode():
 		self.updater()
 
 	def load_wpt_list (self):
-		self.wptlist.load_from_csv_ne_format ('waypoints.txt')
+		self.wptlist.load_from_csv_ne_format ('/home/ishan/ish_frobomind/src/fmApp/frobolab/frobit_v2_demo/waypoints/waypoints.txt')
 		(numwpt, nextwpt) = self.wptlist.status()
 		self.prev_wpt = False 
 		self.wpt = False 

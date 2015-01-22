@@ -1,0 +1,17 @@
+1) Test whether robot is moving to the two consecutive waypoints even if they are same or it skips to the
+next waypoint - done skips if consecutive waypoints are same
+
+2) Test whether multiple same waypoints are navigated multiple times or only once - done
+
+3) detect strange turn
+
+4) log values in log file - done
+
+5) PID control
+
+6) right turn ofg robot angular velocity becomes negative
+7) kjeld algorithm robot is more unstable..keeps adjusting the heading while moving on the 
+ab line.
+8) simple algorithm this movement seems to be less
+9) strange turn mostly due to adjusting of the heading using pid at the last stretch.
+10) 

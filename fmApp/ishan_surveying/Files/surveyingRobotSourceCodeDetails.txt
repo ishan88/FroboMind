@@ -102,12 +102,29 @@ Second time and afterwards whenever robot is in automode then directly the updat
 				   
 5) 	ab_len - is the total length of ab line
 	dist = distance between destination and robot's current pose
-	dist_start = distance between start position and robot's current pose. Investigate further
+	dist_start = distance between start position and robot's current pose.
 	ab_dist_to_pose = distance of robot from the closest point on ab line
+	d = distance of closest point on ab line from the start position
+	target = goal
+	pt = point on ab line
 	
-6) Ramp variables are used to calculate the velocities of the robot when the robot is turning or moving to destination or approaching a waypoint
+6) Heading error is the diff between target bearing and robot pose. When target is destination, then bearing
+is calc by subtracting the easting and northing components of destination with robot pose. Similarly, when 
+target is between a and b line bearing is the diff b/w easting and northing of a and b points. heading error
+is calc by subtracting the bearing from robot pose
+
+7) For turning the pid is used in this way - The target heading error is the error which is given to pid and the output obtained from the pid is the 
+angular velocity.pid_drive instance of the pid controller is used to correct errors of the heading error when
+the robot is driving between two waypoints. the angular velocity is thus adjusted. The pid_turn instance of
+the pid controller is used to correct errors when the robot is turning. this happens when the robot reaches
+the waypoint. 
+
+	
+	
+8) Ramp variables are used to calculate the velocities of the robot when the robot is turning or moving to destination or approaching a waypoint
 				   
 				   
+9) rosrun rviz rviz -d `rospack find rbx1_nav`/nav.rviz
 				   
 				   
 				   

@@ -224,7 +224,7 @@ RoboCard based frobits using 1800/700 ohm voltage dividers:
 		<node pkg="serial_nmea" name="frobit_nmea" type="serial_nmea_node" respawn="true" output="screen">
 			<param name="nmea_from_device_pub" value="/fmSignal/nmea_from_frobit"/>
 			<param name="nmea_to_device_sub" value="/fmSignal/nmea_to_frobit"/>
-			<param name="serial_device" value="/dev/frobit"/>
+			<param name="serial_device" value="/dev/frobitTest"/>
 			<param name="serial_baudrate" value="57600"/>
 			<param name="use_nmea_checksum" value="true"/>
         </node>

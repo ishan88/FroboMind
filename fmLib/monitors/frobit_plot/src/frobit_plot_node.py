@@ -147,7 +147,7 @@ class ROSnode():
 # Main function.    
 if __name__ == '__main__':
     # Initialize the node and name it.
-    rospy.init_node('frobit_plot_node')
+    rospy.init_node('ish_frobit_node')
 
     # Go to class functions that do all the heavy lifting. Do error checking.
     try:

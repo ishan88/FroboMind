@@ -173,7 +173,6 @@ class mission_node():
 	def publish_automode_message(self):
 		self.automode_msg = (self.state == self.STATE_AUTO)
 		self.automode_pub.publish (self.automode_msg)
-# 		rospy.loginfo("Automode message is  "+str(self.automode_msg))
 
 	def publish_cmd_vel_message(self):
 		self.cmd_vel_msg.header.stamp = rospy.Time.now()
@@ -192,7 +191,7 @@ class mission_node():
 # main function.    
 if __name__ == '__main__':
     # initialize the node and name it.
-    rospy.init_node('keyboard_mission')
+    rospy.init_node('ish_keyboard_mission')
 
     # go to class functions that do all the heavy lifting. Do error checking.
     try:

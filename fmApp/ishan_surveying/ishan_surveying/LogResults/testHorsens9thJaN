@@ -1,0 +1,15 @@
+kP=0.8
+KI=0.35
+KD=0.1
+FF=0.05 
+
+tHESE VALUES give a good stable drive
+kP=0.8
+KI=0.3
+KD=0.1
+FF=0.05
+
+kP=0.8 0.8
+KI=0.3 0.4
+KD=0.1 0.1
+FF=0  0.05

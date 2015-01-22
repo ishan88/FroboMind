@@ -208,7 +208,7 @@ class ROSnode():
 		self.pose[0] += rot_ds[0]
 		self.pose[1] += rot_ds[1]
 		self.pose[2] += da
-		rospy.loginfo("The pose of the Robot is : "+str(self.pose[0])+" "+str(self.pose[1])+" "+str(self.pose[2]))
+	
 
 	def on_deadman_message(self, msg):
 		if msg.data == True:
@@ -289,7 +289,7 @@ class ROSnode():
 # Main function.    
 if __name__ == '__main__':
     # Initialize the node and name it.
-    rospy.init_node('frobit_sim')
+    rospy.init_node('ish_froboscout_sim')
 
     # Go to class functions that do all the heavy lifting. Do error checking.
     try:
