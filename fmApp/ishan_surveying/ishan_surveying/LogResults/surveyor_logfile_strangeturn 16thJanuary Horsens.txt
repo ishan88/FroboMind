@@ -27316,3 +27316,8075 @@ Fri Jan 16 15:25:32 2015
  Kjeld's Algorithm Results.
 Fri Jan 16 15:26:25 2015
  Time 
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 12:48:09 2015
+ Time 
+Thu Jan 22 12:48:12 2015
+Heading Err
+0.0
+Linear Vel
+0.15
+Angular Vel
+0.2
+dist
+10.0
+pose - x
+0.0
+pose - y
+0.0
+pose - z
+0.0
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0
+d
+0.0
+pt[E]
+0.0
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0
+
+Thu Jan 22 12:48:14 2015
+Heading Err
+-0.0281775128283
+Linear Vel
+0.215486128899
+Angular Vel
+-0.29629525555
+dist
+9.79909510058
+pose - x
+0.200904916179
+pose - y
+-0.000573058515285
+pose - z
+0.028235993587
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000573058515285
+d
+0.200904916179
+pt[E]
+0.200904916179
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0281775128283
+
+Thu Jan 22 12:48:16 2015
+Heading Err
+0.00159419357309
+Linear Vel
+0.4
+Angular Vel
+-0.191303836489
+dist
+9.15243852067
+pose - x
+0.847561851722
+pose - y
+0.00261085332272
+pose - z
+-0.00187945671387
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00261085332272
+d
+0.847561851722
+pt[E]
+0.847561851722
+pt[N]
+0.0
+Target[E]
+2.93937747669
+Target[N]
+0.0
+Target_Heading_Error
+0.000631329519573
+
+Thu Jan 22 12:48:18 2015
+Heading Err
+0.0277541620957
+Linear Vel
+0.4
+Angular Vel
+0.199349542834
+dist
+8.34478823052
+pose - x
+1.65521269884
+pose - y
+-0.00393836095055
+pose - z
+-0.027282207507
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00393836095055
+d
+1.65521269884
+pt[E]
+1.65521269884
+pt[N]
+0.0
+Target[E]
+3.58192297968
+Target[N]
+0.0
+Target_Heading_Error
+0.0293262903691
+
+Thu Jan 22 12:48:20 2015
+Heading Err
+-0.105524346702
+Linear Vel
+0.4
+Angular Vel
+-0.30576903357
+dist
+7.54840496767
+pose - x
+2.45159646778
+pose - y
+0.00465516953698
+pose - z
+0.104907637629
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00465516953698
+d
+2.45159646778
+pt[E]
+2.45159646778
+pt[N]
+0.0
+Target[E]
+4.31493651924
+Target[N]
+0.0
+Target_Heading_Error
+-0.107405925501
+
+Thu Jan 22 12:48:22 2015
+Heading Err
+-0.0615333205594
+Linear Vel
+0.4
+Angular Vel
+-0.330961703449
+dist
+6.73445736737
+pose - x
+3.2655518268
+pose - y
+0.0111281341941
+pose - z
+0.0598809024578
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0111281341941
+d
+3.2655518268
+pt[E]
+3.2655518268
+pt[N]
+0.0
+Target[E]
+4.83081848828
+Target[N]
+0.0
+Target_Heading_Error
+-0.0669902001816
+
+Thu Jan 22 12:48:24 2015
+Heading Err
+0.0401143169667
+Linear Vel
+0.4
+Angular Vel
+0.200211273046
+dist
+5.93198610242
+pose - x
+4.06807464188
+pose - y
+0.0268452048417
+pose - z
+-0.0446398327065
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0268452048417
+d
+4.06807464188
+pt[E]
+4.06807464188
+pt[N]
+0.0
+Target[E]
+5.38041417878
+Target[N]
+0.0
+Target_Heading_Error
+0.0241866949396
+
+Thu Jan 22 12:48:26 2015
+Heading Err
+0.0133595380745
+Linear Vel
+0.4
+Angular Vel
+0.125799048202
+dist
+5.11418788105
+pose - x
+4.88581366046
+pose - y
+-0.00397077903068
+pose - z
+-0.0125831138363
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00397077903068
+d
+4.88581366046
+pt[E]
+4.88581366046
+pt[N]
+0.0
+Target[E]
+6.80936756902
+Target[N]
+0.0
+Target_Heading_Error
+0.0146474039884
+
+Thu Jan 22 12:48:28 2015
+Heading Err
+0.0443855718346
+Linear Vel
+0.4
+Angular Vel
+0.175802793011
+dist
+4.2836507625
+pose - x
+5.71634987681
+pose - y
+-0.00234032902299
+pose - z
+-0.0438392319789
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00234032902299
+d
+5.71634987681
+pt[E]
+5.71634987681
+pt[N]
+0.0
+Target[E]
+7.85443290339
+Target[N]
+0.0
+Target_Heading_Error
+0.0449338237507
+
+Thu Jan 22 12:48:30 2015
+Heading Err
+0.0498807118467
+Linear Vel
+0.4
+Angular Vel
+0.239854610979
+dist
+3.46949447962
+pose - x
+6.53058004596
+pose - y
+-0.0227404193644
+pose - z
+-0.0433262750771
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0227404193644
+d
+6.53058004596
+pt[E]
+6.53058004596
+pt[N]
+0.0
+Target[E]
+7.88726735222
+Target[N]
+0.0
+Target_Heading_Error
+0.0600864304476
+
+Thu Jan 22 12:48:32 2015
+Heading Err
+-0.04213837013
+Linear Vel
+0.4
+Angular Vel
+-0.199240354265
+dist
+2.62418853902
+pose - x
+7.37593520738
+pose - y
+-0.0254843570385
+pose - z
+0.0518498513165
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0254843570385
+d
+7.37593520738
+pt[E]
+7.37593520738
+pt[N]
+0.0
+Target[E]
+8.70202194214
+Target[N]
+0.0
+Target_Heading_Error
+-0.0326345015461
+
+Thu Jan 22 12:48:34 2015
+Heading Err
+-0.0217279896681
+Linear Vel
+0.4
+Angular Vel
+-0.287667390011
+dist
+1.8195646197
+pose - x
+8.18046606424
+pose - y
+-0.0105670192347
+pose - z
+0.0275354660936
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0105670192347
+d
+8.18046606424
+pt[E]
+8.18046606424
+pt[N]
+0.0
+Target[E]
+9.76201691818
+Target[N]
+0.0
+Target_Heading_Error
+-0.0208541368337
+
+Thu Jan 22 12:48:36 2015
+Heading Err
+-0.0121227291765
+Linear Vel
+0.4
+Angular Vel
+-0.231895626321
+dist
+1.02818381341
+pose - x
+8.97187363366
+pose - y
+-0.0108687162087
+pose - z
+0.02269371706
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0108687162087
+d
+8.97187363366
+pt[E]
+8.97187363366
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0121227291765
+
+Thu Jan 22 12:48:38 2015
+Heading Err
+0.0266058513621
+Linear Vel
+0.255956464031
+Angular Vel
+0.208595402518
+dist
+0.30088730175
+pose - x
+9.69911315519
+pose - y
+0.000524380310263
+pose - z
+-0.02834863204
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000524380310263
+d
+9.69911315519
+pt[E]
+9.69911315519
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0266058513621
+
+Thu Jan 22 12:48:46 2015
+Heading Err
+2.01156708871
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+10.3063022628
+pose - x
+10.030323412
+pose - y
+0.00468384638026
+pose - z
+0.0691204167809
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.0287821081021
+d
+-0.0106319322824
+pt[E]
+10.0051633228
+pt[N]
+-0.00929398096392
+Target[E]
+9.37666939579
+Target[N]
+1.12199508758
+Target_Heading_Error
+2.0310109434
+
+Thu Jan 22 12:48:48 2015
+Heading Err
+1.2430464914
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+10.3127301167
+pose - x
+10.0257212662
+pose - y
+-0.00525003620109
+pose - z
+0.836781368309
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0199347890123
+d
+-0.0170807084461
+pt[E]
+10.0082951253
+pt[N]
+-0.0149312255695
+Target[E]
+9.33183030144
+Target[N]
+1.20270545741
+Target_Heading_Error
+1.25542393129
+
+Thu Jan 22 12:48:50 2015
+Heading Err
+0.389762531513
+Linear Vel
+0.0
+Angular Vel
+0.390825631222
+dist
+10.3075790249
+pose - x
+10.030389839
+pose - y
+0.0032581773512
+pose - z
+1.69086309073
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0281478096643
+d
+-0.0119104510422
+pt[E]
+10.0057842264
+pt[N]
+-0.0104116074404
+Target[E]
+9.37447750526
+Target[N]
+1.12594049053
+Target_Heading_Error
+0.408681516281
+
+Thu Jan 22 12:48:52 2015
+Heading Err
+-0.0694992484775
+Linear Vel
+0.154289206615
+Angular Vel
+-0.303128249852
+dist
+10.2843171071
+pose - x
+10.0196060813
+pose - y
+0.023879838807
+pose - z
+2.15018822833
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0287358735299
+d
+0.0113531800593
+pt[E]
+9.99448640836
+pt[N]
+0.009924464956
+Target[E]
+9.36578996928
+Target[N]
+1.1415780553
+Target_Heading_Error
+-0.0500997252429
+
+Thu Jan 22 12:48:54 2015
+Heading Err
+-0.00288404942266
+Linear Vel
+0.300421025856
+Angular Vel
+0.198434472262
+dist
+9.83616212234
+pose - x
+9.79018982352
+pose - y
+0.409064849995
+pose - z
+2.08232952265
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0152523604197
+d
+0.459479844125
+pt[E]
+9.77685686168
+pt[N]
+0.401657648973
+Target[E]
+9.0631593377
+Target[N]
+1.68631319214
+Target_Heading_Error
+0.00594356379219
+
+Thu Jan 22 12:48:56 2015
+Heading Err
+0.0451419641132
+Linear Vel
+0.4
+Angular Vel
+0.226055324843
+dist
+9.0828831022
+pose - x
+9.41992659996
+pose - y
+1.06507628901
+pose - z
+2.0338727086
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0101713875913
+d
+1.21275273395
+pt[E]
+9.41103520749
+pt[N]
+1.06013662652
+Target[E]
+8.63708101515
+Target[N]
+2.45325417272
+Target_Heading_Error
+0.0504044065247
+
+Thu Jan 22 12:48:58 2015
+Heading Err
+0.00971971823085
+Linear Vel
+0.4
+Angular Vel
+0.191878494319
+dist
+8.26827734032
+pose - x
+9.00940076499
+pose - y
+1.76887867049
+pose - z
+2.06734106892
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00689610656805
+d
+2.0273556765
+pt[E]
+9.01542904672
+pt[N]
+1.7722277159
+Target[E]
+8.17891337537
+Target[N]
+3.27795592434
+Target_Heading_Error
+0.00655021800284
+
+Thu Jan 22 12:49:00 2015
+Heading Err
+0.000119377462973
+Linear Vel
+0.4
+Angular Vel
+-0.155805908947
+dist
+7.47637176202
+pose - x
+8.62144564301
+pose - y
+2.45926103726
+pose - z
+2.07633751202
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0107505830214
+d
+2.81926610832
+pt[E]
+8.63084334338
+pt[N]
+2.46448198191
+Target[E]
+7.86541585263
+Target[N]
+3.84225146526
+Target_Heading_Error
+-0.00526352767935
+
+Thu Jan 22 12:49:02 2015
+Heading Err
+0.0225335140152
+Linear Vel
+0.4
+Angular Vel
+0.215304005351
+dist
+6.6631179255
+pose - x
+8.24469690287
+pose - y
+3.18028501577
+pose - z
+2.05687291682
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0100719628832
+d
+3.63251982787
+pt[E]
+8.23589242323
+pt[N]
+3.17539363819
+Target[E]
+7.46041597611
+Target[N]
+4.571251243
+Target_Heading_Error
+0.0273294079441
+
+Thu Jan 22 12:49:04 2015
+Heading Err
+0.0114771314098
+Linear Vel
+0.4
+Angular Vel
+0.167409626895
+dist
+5.84661833259
+pose - x
+7.8485080027
+pose - y
+3.89422404667
+pose - z
+2.06820676856
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0104599967356
+d
+4.44902116522
+pt[E]
+7.83936432045
+pt[N]
+3.8891442232
+Target[E]
+7.06972972989
+Target[N]
+5.27448648619
+Target_Heading_Error
+0.0162882723589
+
+Thu Jan 22 12:49:06 2015
+Heading Err
+-0.000536355092029
+Linear Vel
+0.4
+Angular Vel
+0.196864833601
+dist
+5.08139361432
+pose - x
+7.47505838972
+pose - y
+4.56213485659
+pose - z
+2.0800788578
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00837246377392
+d
+5.2142434242
+pt[E]
+7.46773953959
+pt[N]
+4.55806882874
+Target[E]
+6.66306021435
+Target[N]
+6.00649161417
+Target_Heading_Error
+0.00286890952344
+
+Thu Jan 22 12:49:08 2015
+Heading Err
+0.0418206895722
+Linear Vel
+0.4
+Angular Vel
+0.255266175836
+dist
+4.28547842419
+pose - x
+7.09489760021
+pose - y
+5.26145357541
+pose - z
+2.03973099608
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0156713359648
+d
+6.01018037073
+pt[E]
+7.08119838785
+pt[N]
+5.25384290187
+Target[E]
+6.37136021628
+Target[N]
+6.5315516107
+Target_Heading_Error
+0.0488851265694
+
+Thu Jan 22 12:49:10 2015
+Heading Err
+0.0260272304045
+Linear Vel
+0.4
+Angular Vel
+0.241837998596
+dist
+3.44287030575
+pose - x
+6.6812159857
+pose - y
+5.99552521201
+pose - z
+2.05493052779
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0105452439371
+d
+6.8527759849
+pt[E]
+6.67199778398
+pt[N]
+5.99040398883
+Target[E]
+5.90361179338
+Target[N]
+7.37349877192
+Target_Heading_Error
+0.0296291143307
+
+Thu Jan 22 12:49:12 2015
+Heading Err
+-0.0181799734234
+Linear Vel
+0.4
+Angular Vel
+-0.230763582699
+dist
+2.64770262581
+pose - x
+6.27490704225
+pose - y
+6.67945238611
+pose - z
+2.09135814045
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0124882777863
+d
+7.64795696673
+pt[E]
+6.28582376115
+pt[N]
+6.68551722993
+Target[E]
+5.54299786625
+Target[N]
+8.02260384075
+Target_Heading_Error
+-0.0216276841367
+
+Thu Jan 22 12:49:14 2015
+Heading Err
+-0.0286918077795
+Linear Vel
+0.4
+Angular Vel
+-0.283389648416
+dist
+1.8463630845
+pose - x
+5.89465702238
+pose - y
+7.38486983431
+pose - z
+2.10533791233
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00230560215936
+d
+8.44926849602
+pt[E]
+5.89667248128
+pt[N]
+7.3859895337
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+-0.0286918077795
+
+Thu Jan 22 12:49:16 2015
+Heading Err
+-0.0250208048561
+Linear Vel
+0.4
+Angular Vel
+-0.226827554259
+dist
+1.02588393713
+pose - x
+5.49471388743
+pose - y
+8.10128089926
+pose - z
+2.09901768611
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00399883410061
+d
+9.2697539975
+pt[E]
+5.49820949735
+pt[N]
+8.10322290477
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+-0.0250208048561
+
+Thu Jan 22 12:49:18 2015
+Heading Err
+0.0616948744369
+Linear Vel
+0.259899734417
+Angular Vel
+0.210141677335
+dist
+0.31271071675
+pose - x
+5.14962408647
+pose - y
+8.72540825738
+pose - z
+2.00801800678
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00255855489122
+d
+9.98292989128
+pt[E]
+5.15186066585
+pt[N]
+8.72665080147
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+0.0616948744369
+
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 12:49:40 2015
+ Time 
+Thu Jan 22 12:49:48 2015
+Heading Err
+0.0
+Linear Vel
+0.15
+Angular Vel
+0.2
+dist
+10.0
+pose - x
+0.0
+pose - y
+0.0
+pose - z
+0.0
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0
+d
+0.0
+pt[E]
+0.0
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0
+
+Thu Jan 22 12:49:50 2015
+Heading Err
+0.0
+Linear Vel
+0.15
+Angular Vel
+0.2
+dist
+10.0
+pose - x
+0.0
+pose - y
+0.0
+pose - z
+0.0
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0
+d
+0.0
+pt[E]
+0.0
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0
+
+Thu Jan 22 12:49:52 2015
+Heading Err
+0.00271369360115
+Linear Vel
+0.175266030619
+Angular Vel
+-0.177662462311
+dist
+9.91189190987
+pose - x
+0.0881081294306
+pose - y
+0.000882697042149
+pose - z
+-0.00280274794631
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000882697042149
+d
+0.0881081294306
+pt[E]
+0.0881081294306
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.00271369360115
+
+Thu Jan 22 12:49:54 2015
+Heading Err
+-0.042288376424
+Linear Vel
+0.3440116745
+Angular Vel
+-0.158129838856
+dist
+9.41764737445
+pose - x
+0.58235572129
+pose - y
+0.00763604543957
+pose - z
+0.0414775532988
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00763604543957
+d
+0.58235572129
+pt[E]
+0.58235572129
+pt[N]
+0.0
+Target[E]
+2.27008761992
+Target[N]
+0.0
+Target_Heading_Error
+-0.0460019646355
+
+Thu Jan 22 12:49:56 2015
+Heading Err
+0.0513874925592
+Linear Vel
+0.4
+Angular Vel
+0.311266439651
+dist
+8.62136690561
+pose - x
+1.37863447409
+pose - y
+0.00487749291041
+pose - z
+-0.0519532373215
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00487749291041
+d
+1.37863447409
+pt[E]
+1.37863447409
+pt[N]
+0.0
+Target[E]
+3.22466884593
+Target[N]
+0.0
+Target_Heading_Error
+0.0493110971561
+
+Thu Jan 22 12:49:58 2015
+Heading Err
+0.0181256464579
+Linear Vel
+0.4
+Angular Vel
+0.188660467556
+dist
+7.82145793882
+pose - x
+2.17854290189
+pose - y
+0.0036264430082
+pose - z
+-0.0185892995475
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0036264430082
+d
+2.17854290189
+pt[E]
+2.17854290189
+pt[N]
+0.0
+Target[E]
+4.13731295413
+Target[N]
+0.0
+Target_Heading_Error
+0.0167379138472
+
+Thu Jan 22 12:50:00 2015
+Heading Err
+-0.0184386195894
+Linear Vel
+0.4
+Angular Vel
+-0.232205699344
+dist
+6.97808912965
+pose - x
+3.02191195595
+pose - y
+0.00389242338039
+pose - z
+0.0178808130739
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00389242338039
+d
+3.02191195595
+pt[E]
+3.02191195595
+pt[N]
+0.0
+Target[E]
+4.95314872043
+Target[N]
+0.0
+Target_Heading_Error
+-0.0198963184647
+
+Thu Jan 22 12:50:02 2015
+Heading Err
+-0.039024825547
+Linear Vel
+0.4
+Angular Vel
+-0.254119622
+dist
+6.19150420388
+pose - x
+3.8084992272
+pose - y
+0.00651821706734
+pose - z
+0.037972057422
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00651821706734
+d
+3.8084992272
+pt[E]
+3.8084992272
+pt[N]
+0.0
+Target[E]
+5.55051600039
+Target[N]
+0.0
+Target_Heading_Error
+-0.0417138047736
+
+Thu Jan 22 12:50:04 2015
+Heading Err
+0.0950440358537
+Linear Vel
+0.4
+Angular Vel
+0.4
+dist
+5.35314047888
+pose - x
+4.64687947693
+pose - y
+-0.0146168443201
+pose - z
+-0.0923135148556
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0146168443201
+d
+4.64687947693
+pt[E]
+4.64687947693
+pt[N]
+0.0
+Target[E]
+6.12904026705
+Target[N]
+0.0
+Target_Heading_Error
+0.102175043096
+
+Thu Jan 22 12:50:06 2015
+Heading Err
+-0.0497213986821
+Linear Vel
+0.4
+Angular Vel
+-0.187576020429
+dist
+4.56044507314
+pose - x
+5.43956864447
+pose - y
+-0.0111855513511
+pose - z
+0.052174133533
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0111855513511
+d
+5.43956864447
+pt[E]
+5.43956864447
+pt[N]
+0.0
+Target[E]
+7.00322471791
+Target[N]
+0.0
+Target_Heading_Error
+-0.0450207954356
+
+Thu Jan 22 12:50:08 2015
+Heading Err
+-0.0302137291128
+Linear Vel
+0.4
+Angular Vel
+-0.16205648358
+dist
+3.76563981423
+pose - x
+6.23436022438
+pose - y
+-0.000539255610906
+pose - z
+0.0303569333594
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000539255610906
+d
+6.23436022438
+pt[E]
+6.23436022438
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0302137291128
+
+Thu Jan 22 12:50:10 2015
+Heading Err
+0.024944925841
+Linear Vel
+0.4
+Angular Vel
+0.236601010202
+dist
+2.93383004163
+pose - x
+7.06617165968
+pose - y
+0.00315954121509
+pose - z
+-0.0260218600127
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00315954121509
+d
+7.06617165968
+pt[E]
+7.06617165968
+pt[N]
+0.0
+Target[E]
+9.07968708727
+Target[N]
+0.0
+Target_Heading_Error
+0.024452694672
+
+Thu Jan 22 12:50:12 2015
+Heading Err
+-0.0245777477338
+Linear Vel
+0.4
+Angular Vel
+-0.208141235734
+dist
+2.11160147947
+pose - x
+7.8884951458
+pose - y
+0.0202004652421
+pose - z
+0.0150111824688
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0202004652421
+d
+7.8884951458
+pt[E]
+7.8884951458
+pt[N]
+0.0
+Target[E]
+9.27773503163
+Target[N]
+0.0
+Target_Heading_Error
+-0.0295508181083
+
+Thu Jan 22 12:50:14 2015
+Heading Err
+-0.0863524299921
+Linear Vel
+0.4
+Angular Vel
+-0.359636459352
+dist
+1.30473013024
+pose - x
+8.69547362284
+pose - y
+0.0230574077177
+pose - z
+0.0686793438028
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0230574077177
+d
+8.69547362284
+pt[E]
+8.69547362284
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0863524299921
+
+Thu Jan 22 12:50:16 2015
+Heading Err
+-0.0271545991906
+Linear Vel
+0.337208466591
+Angular Vel
+-0.316131132989
+dist
+0.520654680453
+pose - x
+9.47948450851
+pose - y
+0.0120382471835
+pose - z
+0.00403117305713
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0120382471835
+d
+9.47948450851
+pt[E]
+9.47948450851
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0271545991906
+
+Thu Jan 22 12:50:18 2015
+Heading Err
+-0.0508253966682
+Linear Vel
+0.166111804965
+Angular Vel
+-0.383298387401
+dist
+0.0414348328322
+pose - x
+9.95856567786
+pose - y
+0.000205718890295
+pose - z
+0.0458604982625
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000205718890295
+d
+9.95856567786
+pt[E]
+9.95856567786
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0508253966682
+
+Thu Jan 22 12:50:25 2015
+Heading Err
+2.1779584835
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+10.2986557367
+pose - x
+10.0073358882
+pose - y
+0.00061683864397
+pose - z
+-0.0994118892051
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.0067122834175
+d
+-0.00302340828361
+pt[E]
+10.0014682969
+pt[N]
+-0.00264293434981
+Target[E]
+9.16041994741
+Target[N]
+1.51124409467
+Target_Heading_Error
+2.18118254593
+
+Thu Jan 22 12:50:27 2015
+Heading Err
+1.69471883929
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+10.3006999378
+pose - x
+10.0094054973
+pose - y
+-0.000570858181162
+pose - z
+0.383947264864
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00794465064461
+d
+-0.00506673310214
+pt[E]
+10.0024606231
+pt[N]
+-0.0044291216074
+Target[E]
+9.18929506667
+Target[N]
+1.45926887999
+Target_Heading_Error
+1.69869227599
+
+Thu Jan 22 12:50:29 2015
+Heading Err
+0.960384140296
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+10.2991511647
+pose - x
+10.0171418318
+pose - y
+0.00551265754818
+pose - z
+1.11922557482
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0176618401458
+d
+-0.00350587972432
+pt[E]
+10.0017026057
+pt[N]
+-0.00306469027022
+Target[E]
+9.30864739557
+Target[N]
+1.24443468798
+Target_Heading_Error
+0.971044763839
+
+Thu Jan 22 12:50:31 2015
+Heading Err
+0.204977170342
+Linear Vel
+0.0
+Angular Vel
+0.278396108611
+dist
+10.2952947884
+pose - x
+10.016612068
+pose - y
+0.0096330364381
+pose - z
+1.87478256979
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0191997761857
+d
+0.00035325548585
+pt[E]
+9.99982844397
+pt[N]
+0.000308800853286
+Target[E]
+9.31825781039
+Target[N]
+1.22713594131
+Target_Heading_Error
+0.216791920548
+
+Thu Jan 22 12:50:33 2015
+Heading Err
+0.0375218023037
+Linear Vel
+0.242617847708
+Angular Vel
+0.227575878567
+dist
+10.0129795815
+pose - x
+9.87826895224
+pose - y
+0.255730326146
+pose - z
+2.04214887924
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0177815440544
+d
+0.282666348173
+pt[E]
+9.86272508613
+pt[N]
+0.247094844971
+Target[E]
+9.17060609463
+Target[N]
+1.49290902967
+Target_Heading_Error
+0.0482221781721
+
+Thu Jan 22 12:50:35 2015
+Heading Err
+0.0122162467135
+Linear Vel
+0.4
+Angular Vel
+-0.15482211979
+dist
+9.28634046018
+pose - x
+9.52068160395
+pose - y
+0.888307391294
+pose - z
+2.06701393779
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0124005418059
+d
+1.00929796036
+pt[E]
+9.5098415801
+pt[N]
+0.882285155823
+Target[E]
+8.7659672457
+Target[N]
+2.22125895774
+Target_Heading_Error
+0.0189764864723
+
+Thu Jan 22 12:50:37 2015
+Heading Err
+-0.0543440132571
+Linear Vel
+0.4
+Angular Vel
+-0.260555893929
+dist
+8.51362339179
+pose - x
+9.14138865273
+pose - y
+1.5615402613
+pose - z
+2.13315380554
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00778963307296
+d
+1.7820103128
+pt[E]
+9.1345792883
+pt[N]
+1.55775728106
+Target[E]
+8.31820242872
+Target[N]
+3.02723562831
+Target_Heading_Error
+-0.050625142416
+
+Thu Jan 22 12:50:39 2015
+Heading Err
+-0.0445906881043
+Linear Vel
+0.4
+Angular Vel
+-0.274620048229
+dist
+7.72049401825
+pose - x
+8.75053926688
+pose - y
+2.25170517141
+pose - z
+2.12265383864
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00129950850654
+d
+2.5751362321
+pt[E]
+8.74940329206
+pt[N]
+2.25107407429
+Target[E]
+7.58140736844
+Target[N]
+4.35346673681
+Target_Heading_Error
+-0.0442186827414
+
+Thu Jan 22 12:50:41 2015
+Heading Err
+-0.0120863250664
+Linear Vel
+0.4
+Angular Vel
+-0.132021368804
+dist
+6.93865596846
+pose - x
+8.36458395472
+pose - y
+2.93167885983
+pose - z
+2.0891363642
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00586172070511
+d
+3.3569766485
+pt[E]
+8.36970802053
+pt[N]
+2.93452556305
+Target[E]
+7.50555510529
+Target[N]
+4.49000081048
+Target_Heading_Error
+-0.0145357334723
+
+Thu Jan 22 12:50:43 2015
+Heading Err
+-0.030414870154
+Linear Vel
+0.4
+Angular Vel
+-0.216898693133
+dist
+6.14990987641
+pose - x
+7.98489977454
+pose - y
+3.62303386435
+pose - z
+2.10798225937
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00201373855362
+d
+4.14572059427
+pt[E]
+7.98666009875
+pt[N]
+3.62401182225
+Target[E]
+6.91662885997
+Target[N]
+5.55006805206
+Target_Heading_Error
+-0.0310013805891
+
+Thu Jan 22 12:50:45 2015
+Heading Err
+0.00496642176891
+Linear Vel
+0.4
+Angular Vel
+-0.188600467943
+dist
+5.34419949204
+pose - x
+7.58469922287
+pose - y
+4.32241535212
+pose - z
+2.07064513059
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0122022869768
+d
+4.95144457956
+pt[E]
+7.59536594081
+pt[N]
+4.32834130654
+Target[E]
+6.84908934827
+Target[N]
+5.67163917312
+Target_Heading_Error
+-0.000690826979253
+
+Thu Jan 22 12:50:47 2015
+Heading Err
+0.0166346145948
+Linear Vel
+0.4
+Angular Vel
+0.256975169084
+dist
+4.52390365917
+pose - x
+7.20135603168
+pose - y
+5.04781883776
+pose - z
+2.0623615993
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00498254824926
+d
+5.77172922567
+pt[E]
+7.19700050088
+pt[N]
+5.04539909842
+Target[E]
+6.3042998972
+Target[N]
+6.65226018504
+Target_Heading_Error
+0.0182438085367
+
+Thu Jan 22 12:50:49 2015
+Heading Err
+-0.0426020126817
+Linear Vel
+0.4
+Angular Vel
+-0.208379419551
+dist
+3.68484660628
+pose - x
+6.7844993876
+pose - y
+5.77608057678
+pose - z
+2.11893896165
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00574055467204
+d
+6.61078800627
+pt[E]
+6.78951753524
+pt[N]
+5.77886843657
+Target[E]
+5.92174694151
+Target[N]
+7.34085550528
+Target_Heading_Error
+-0.0442567885426
+
+Thu Jan 22 12:50:51 2015
+Heading Err
+0.0486807655437
+Linear Vel
+0.4
+Angular Vel
+0.253695638003
+dist
+2.87382656313
+pose - x
+6.37301768066
+pose - y
+6.47538090724
+pose - z
+2.02022592118
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0258300205225
+d
+7.42191966062
+pt[E]
+6.39559718104
+pt[N]
+6.48792507412
+Target[E]
+5.75332807635
+Target[N]
+7.64400946257
+Target_Heading_Error
+0.0381403788706
+
+Thu Jan 22 12:50:53 2015
+Heading Err
+-0.0291283864393
+Linear Vel
+0.4
+Angular Vel
+-0.253623824031
+dist
+2.05529866778
+pose - x
+6.00370167127
+pose - y
+7.20644610651
+pose - z
+2.11012075241
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00636634894047
+d
+8.24034133321
+pt[E]
+5.99813648103
+pt[N]
+7.20335433415
+Target[E]
+5.14813987499
+Target[N]
+8.73334822502
+Target_Heading_Error
+-0.0285885434966
+
+Thu Jan 22 12:50:55 2015
+Heading Err
+-0.0223660748812
+Linear Vel
+0.4
+Angular Vel
+-0.237420075663
+dist
+1.24591101913
+pose - x
+5.58804460319
+pose - y
+7.90159305709
+pose - z
+2.08469728929
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.019390098817
+d
+9.04987001494
+pt[E]
+5.60499459916
+pt[N]
+7.91100972151
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+-0.0223660748812
+
+Thu Jan 22 12:50:57 2015
+Heading Err
+0.0922487633125
+Linear Vel
+0.309467173494
+Angular Vel
+0.270411029481
+dist
+0.454938263387
+pose - x
+5.21408198213
+pose - y
+8.5985803587
+pose - z
+1.96848841713
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0078052888624
+d
+9.84075883945
+pt[E]
+5.22090503219
+pt[N]
+8.60237094206
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+0.0922487633125
+
+Thu Jan 22 12:51:05 2015
+Heading Err
+-0.905179816036
+Linear Vel
+0.15
+Angular Vel
+-0.4
+dist
+5.37690051012
+pose - x
+4.9955978315
+pose - y
+9.01066827695
+pose - z
+2.09397272994
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.00804940942732
+d
+0.0082703221407
+pt[E]
+5.00307152053
+pt[N]
+9.00767880133
+Target[E]
+5.62330463976
+Target[N]
+10.5582615994
+Target_Heading_Error
+-0.908502665507
+
+Thu Jan 22 12:51:07 2015
+Heading Err
+-0.326935624295
+Linear Vel
+0.272410580547
+Angular Vel
+-0.4
+dist
+5.06906699962
+pose - x
+4.92695911249
+pose - y
+9.3742090703
+pose - z
+1.47641886845
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.206794521253
+d
+0.320317694673
+pt[E]
+5.11896300527
+pt[N]
+9.29740751318
+Target[E]
+5.43691608058
+Target[N]
+10.0922902014
+Target_Heading_Error
+-0.523138941127
+
+Thu Jan 22 12:51:09 2015
+Heading Err
+0.298883258344
+Linear Vel
+0.4
+Angular Vel
+-0.4
+dist
+4.33914612439
+pose - x
+5.22006934526
+pose - y
+10.0427236699
+pose - z
+0.849236454288
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.182928591547
+d
+1.04987632548
+pt[E]
+5.38991427861
+pt[N]
+9.97478569652
+Target[E]
+5.71735767914
+Target[N]
+10.7933941979
+Target_Heading_Error
+0.136476033738
+
+Thu Jan 22 12:51:11 2015
+Heading Err
+0.607060486891
+Linear Vel
+0.4
+Angular Vel
+0.4
+dist
+3.65845043081
+pose - x
+5.91564215235
+pose - y
+10.5059439597
+pose - z
+0.662816746822
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.290858849913
+d
+1.7382948226
+pt[E]
+5.64558648987
+pt[N]
+10.6139662247
+Target[E]
+5.93529889613
+Target[N]
+11.3382472403
+Target_Heading_Error
+0.884366684562
+
+Thu Jan 22 12:51:13 2015
+Heading Err
+-0.339998657632
+Linear Vel
+0.4
+Angular Vel
+-0.259141262317
+dist
+2.89072518827
+pose - x
+6.22144760694
+pose - y
+11.2160911859
+pose - z
+1.63810010717
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.311050027795
+d
+2.51122326384
+pt[E]
+5.93264490643
+pt[N]
+11.3316122661
+Target[E]
+6.21623662895
+Target[N]
+12.0405915724
+Target_Heading_Error
+-0.0609837001246
+
+Thu Jan 22 12:51:15 2015
+Heading Err
+-0.00753630646714
+Linear Vel
+0.4
+Angular Vel
+0.236370298632
+dist
+2.10420825115
+pose - x
+6.28409218929
+pose - y
+12.0213215595
+pose - z
+1.23117467356
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0701590092241
+d
+3.28212651038
+pt[E]
+6.21895118457
+pt[N]
+12.0473779614
+Target[E]
+6.62063690683
+Target[N]
+13.0515922671
+Target_Heading_Error
+0.0238921542733
+
+Thu Jan 22 12:51:17 2015
+Heading Err
+-0.0226256220153
+Linear Vel
+0.4
+Angular Vel
+-0.194390643769
+dist
+1.29744952171
+pose - x
+6.55854013875
+pose - y
+12.7799637496
+pose - z
+1.24623701989
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0432248970811
+d
+4.08843551015
+pt[E]
+6.51840682934
+pt[N]
+12.7960170734
+Target[E]
+6.96137682139
+Target[N]
+13.9034420535
+Target_Heading_Error
+-0.01972271711
+
+Thu Jan 22 12:51:19 2015
+Heading Err
+-0.0275881246184
+Linear Vel
+0.325191010588
+Angular Vel
+-0.239050017736
+dist
+0.486219615348
+pose - x
+6.83753721521
+pose - y
+13.541725674
+pose - z
+1.25769756845
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.019355903089
+d
+4.89933061385
+pt[E]
+6.81956571036
+pt[N]
+13.5489142759
+Target[E]
+7.0
+Target[N]
+14.0
+Target_Heading_Error
+-0.0275881246184
+
+Thu Jan 22 12:51:21 2015
+Heading Err
+-0.390629133743
+Linear Vel
+0.157609151926
+Angular Vel
+-0.4
+dist
+0.00939460191764
+pose - x
+6.9934528617
+pose - y
+13.9932625283
+pose - z
+1.1903536802
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00357663111741
+d
+5.37647767556
+pt[E]
+6.99677368033
+pt[N]
+13.9919342008
+Target[E]
+7.0
+Target[N]
+14.0
+Target_Heading_Error
+-0.390629133743
+
+Thu Jan 22 12:51:27 2015
+Heading Err
+-0.290571558716
+Linear Vel
+0.15
+Angular Vel
+-0.4
+dist
+7.06265525001
+pose - x
+7.00118882453
+pose - y
+14.0107128753
+pose - z
+1.07501618245
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.00673452089018
+d
+0.0084157726672
+pt[E]
+7.00595084992
+pt[N]
+14.0059508499
+Target[E]
+8.22972589312
+Target[N]
+15.2297258931
+Target_Heading_Error
+-0.293509258199
+
+Thu Jan 22 12:51:29 2015
+Heading Err
+0.0870421333771
+Linear Vel
+0.275641091118
+Angular Vel
+0.0944872991014
+dist
+6.68369289552
+pose - x
+7.25987843161
+pose - y
+14.2879942446
+pose - z
+0.695381490096
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0198808820449
+d
+0.387404484602
+pt[E]
+7.27393633812
+pt[N]
+14.2739363381
+Target[E]
+8.25941798304
+Target[N]
+15.259417983
+Target_Heading_Error
+0.0757526297769
+
+Thu Jan 22 12:51:31 2015
+Heading Err
+-0.0146804832395
+Linear Vel
+0.4
+Angular Vel
+-0.322286344329
+dist
+5.92031218975
+pose - x
+7.81828567022
+pose - y
+14.8091335397
+pose - z
+0.801171753665
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00647153357201
+d
+1.15075915916
+pt[E]
+7.81370960495
+pt[N]
+14.813709605
+Target[E]
+9.0472736184
+Target[N]
+16.0472736184
+Target_Heading_Error
+-0.0120639779303
+
+Thu Jan 22 12:51:33 2015
+Heading Err
+0.028048801534
+Linear Vel
+0.4
+Angular Vel
+0.191755750964
+dist
+5.08701443885
+pose - x
+8.41982363433
+pose - y
+15.3861304545
+pose - z
+0.762032808965
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0238246759288
+d
+1.98410916393
+pt[E]
+8.40297704443
+pt[N]
+15.4029770444
+Target[E]
+9.35339415619
+Target[N]
+16.3533941562
+Target_Heading_Error
+0.0410889682828
+
+Thu Jan 22 12:51:35 2015
+Heading Err
+0.0676916151483
+Linear Vel
+0.4
+Angular Vel
+0.280686726284
+dist
+4.3021771135
+pose - x
+8.97117729877
+pose - y
+15.9446831653
+pose - z
+0.722061143644
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0187341814404
+d
+2.76893148832
+pt[E]
+8.95793023203
+pt[N]
+15.957930232
+Target[E]
+9.95519996711
+Target[N]
+16.9551999671
+Target_Heading_Error
+0.0766195723244
+
+Thu Jan 22 12:51:37 2015
+Heading Err
+0.0129046051301
+Linear Vel
+0.4
+Angular Vel
+0.191000510067
+dist
+3.51536528219
+pose - x
+9.53417798555
+pose - y
+16.4945030712
+pose - z
+0.780474151048
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0280544009942
+d
+3.55581447564
+pt[E]
+9.51434052837
+pt[N]
+16.5143405284
+Target[E]
+10.4341494206
+Target[N]
+17.4341494206
+Target_Heading_Error
+0.0264876029244
+
+Thu Jan 22 12:51:39 2015
+Heading Err
+-0.0214078261154
+Linear Vel
+0.4
+Angular Vel
+-0.198989027962
+dist
+2.7153104143
+pose - x
+10.0768519154
+pose - y
+17.0831243935
+pose - z
+0.805172543199
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00443531181586
+d
+4.35576101999
+pt[E]
+10.0799881545
+pt[N]
+17.0799881545
+Target[E]
+11.4103797393
+Target[N]
+18.4103797393
+Target_Heading_Error
+-0.0221317558458
+
+Thu Jan 22 12:51:41 2015
+Heading Err
+0.0697793377721
+Linear Vel
+0.4
+Angular Vel
+0.291171121175
+dist
+1.8931508967
+pose - x
+10.6664758216
+pose - y
+17.6562241321
+pose - z
+0.719447921812
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00724903916578
+d
+5.17793079382
+pt[E]
+10.6613499768
+pt[N]
+17.6613499768
+Target[E]
+11.8672364408
+Target[N]
+18.8672364408
+Target_Heading_Error
+0.0702009020185
+
+Thu Jan 22 12:51:43 2015
+Heading Err
+-0.0137186072124
+Linear Vel
+0.4
+Angular Vel
+-0.269119340142
+dist
+1.05959322796
+pose - x
+11.2513663959
+pose - y
+18.2501429899
+pose - z
+0.799933195967
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000865078683852
+d
+6.01147493704
+pt[E]
+11.2507546929
+pt[N]
+18.2507546929
+Target[E]
+12.0
+Target[N]
+19.0
+Target_Heading_Error
+-0.0137186072124
+
+Thu Jan 22 12:51:45 2015
+Heading Err
+-0.00719685811868
+Linear Vel
+0.267498564816
+Angular Vel
+0.12772104089
+dist
+0.334445796583
+pose - x
+11.7624886355
+pose - y
+18.764538023
+pose - z
+0.788262061372
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00144913577256
+d
+6.73662515481
+pt[E]
+11.7635133293
+pt[N]
+18.7635133293
+Target[E]
+12.0
+Target[N]
+19.0
+Target_Heading_Error
+-0.00719685811868
+
+Thu Jan 22 12:51:53 2015
+Heading Err
+1.6212323977
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+8.61132084102
+pose - x
+12.0125055332
+pose - y
+19.0020391384
+pose - z
+0.901147545853
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.00892800871924
+d
+-0.00899094580626
+pt[E]
+12.0073162335
+pt[N]
+18.9947741189
+Target[E]
+10.6762273098
+Target[N]
+19.9455519216
+Target_Heading_Error
+1.62565351961
+
+Thu Jan 22 12:51:55 2015
+Heading Err
+0.724379264166
+Linear Vel
+0.0
+Angular Vel
+0.4
+dist
+8.61838248162
+pose - x
+12.011628725
+pose - y
+18.9886549488
+pose - z
+1.79667698315
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00247278877347
+d
+-0.0160568598313
+pt[E]
+12.0130660043
+pt[N]
+18.9906671398
+Target[E]
+10.2922885744
+Target[N]
+20.2197938754
+Target_Heading_Error
+0.723496835045
+
+Thu Jan 22 12:51:57 2015
+Heading Err
+-0.0251531936498
+Linear Vel
+0.154777878248
+Angular Vel
+-0.239719132106
+dist
+8.60030837306
+pose - x
+11.996737954
+pose - y
+18.9989039087
+pose - z
+2.54617219242
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00278795194291
+d
+0.00201734586863
+pt[E]
+11.9983584181
+pt[N]
+19.0011725585
+Target[E]
+10.3183750491
+Target[N]
+20.2011606792
+Target_Heading_Error
+-0.0261794241496
+
+Thu Jan 22 12:51:59 2015
+Heading Err
+0.0262046815343
+Linear Vel
+0.303217213944
+Angular Vel
+0.235053951545
+dist
+8.15888935614
+pose - x
+11.6388961557
+pose - y
+19.2573706281
+pose - z
+2.49508256528
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.000456251594552
+d
+0.443435923656
+pt[E]
+11.6391613466
+pt[N]
+19.2577418953
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+0.0262046815343
+
+Thu Jan 22 12:52:01 2015
+Heading Err
+-0.0220798479805
+Linear Vel
+0.4
+Angular Vel
+-0.226603374405
+dist
+7.3731755165
+pose - x
+10.9926262484
+pose - y
+19.7044036684
+pose - z
+2.54175110866
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0123272575051
+d
+1.22916005556
+pt[E]
+10.9997913213
+pt[N]
+19.7144347705
+Target[E]
+9.75189169208
+Target[N]
+20.6057916485
+Target_Heading_Error
+-0.0284461564301
+
+Thu Jan 22 12:52:03 2015
+Heading Err
+-0.0102043851105
+Linear Vel
+0.4
+Angular Vel
+-0.251362062108
+dist
+6.57892324352
+pose - x
+10.3471291869
+pose - y
+20.1671889555
+pose - z
+2.52988604517
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0109309255671
+d
+2.02341110443
+pt[E]
+10.3534826583
+pt[N]
+20.1760838155
+Target[E]
+9.07520880323
+Target[N]
+21.0891365691
+Target_Heading_Error
+-0.015501258519
+
+Thu Jan 22 12:52:05 2015
+Heading Err
+-0.0479969526597
+Linear Vel
+0.4
+Angular Vel
+-0.216907186113
+dist
+5.78061630391
+pose - x
+9.70692526765
+pose - y
+20.6443511242
+pose - z
+2.57024675947
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00524093267041
+d
+2.82171133895
+pt[E]
+9.70387903741
+pt[N]
+20.6400864018
+Target[E]
+8.22313706728
+Target[N]
+21.6977592377
+Target_Heading_Error
+-0.0460234745833
+
+Thu Jan 22 12:52:07 2015
+Heading Err
+0.101669199886
+Linear Vel
+0.4
+Angular Vel
+0.331817519234
+dist
+4.98032177043
+pose - x
+9.05516835062
+pose - y
+21.1087693649
+pose - z
+2.42054290498
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00432758660925
+d
+3.62200537681
+pt[E]
+9.052652992
+pt[N]
+21.1052478629
+Target[E]
+7.51410024115
+Target[N]
+22.2042141135
+Target_Heading_Error
+0.103089099276
+
+Thu Jan 22 12:52:09 2015
+Heading Err
+-0.00226742988513
+Linear Vel
+0.4
+Angular Vel
+0.152270157605
+dist
+4.1716473014
+pose - x
+8.3904219995
+pose - y
+21.5694280771
+pose - z
+2.52188586575
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00719496893606
+d
+4.43068417034
+pt[E]
+8.39460399025
+pt[N]
+21.5752828641
+Target[E]
+7.0047987354
+Target[N]
+22.5680009033
+Target_Heading_Error
+-0.00475534045255
+
+Thu Jan 22 12:52:11 2015
+Heading Err
+0.0286118890852
+Linear Vel
+0.4
+Angular Vel
+0.319658866173
+dist
+3.35225428305
+pose - x
+7.72155726988
+pose - y
+22.042773696
+pose - z
+2.48951328241
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0107875226365
+d
+5.25008834111
+pt[E]
+7.72782739005
+pt[N]
+22.0515518643
+Target[E]
+6.44617229504
+Target[N]
+22.9670197893
+Target_Heading_Error
+0.0249809045195
+
+Thu Jan 22 12:52:14 2015
+Heading Err
+-0.0127111652522
+Linear Vel
+0.4
+Angular Vel
+-0.259162070701
+dist
+2.51817197338
+pose - x
+7.04852875382
+pose - y
+22.5355137309
+pose - z
+2.53364993528
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00101834261345
+d
+6.08415349957
+pt[E]
+7.04912065344
+pt[N]
+22.5363423904
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.0127111652522
+
+Thu Jan 22 12:52:16 2015
+Heading Err
+0.0311512636277
+Linear Vel
+0.4
+Angular Vel
+0.265281732521
+dist
+1.73939053541
+pose - x
+6.42008027193
+pose - y
+22.9955840225
+pose - z
+2.49483607165
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00807799225337
+d
+6.86295348944
+pt[E]
+6.4153850343
+pt[N]
+22.9890106898
+Target[E]
+5.05738986575
+Target[N]
+23.9590072387
+Target_Heading_Error
+0.0313475265354
+
+Thu Jan 22 12:52:18 2015
+Heading Err
+-0.00309934122908
+Linear Vel
+0.4
+Angular Vel
+-0.184183565311
+dist
+0.926734341865
+pose - x
+5.75647397104
+pose - y
+23.4646648979
+pose - z
+2.52883587871
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00407147364216
+d
+7.67559986894
+pt[E]
+5.75410747506
+pt[N]
+23.4613518035
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.00309934122908
+
+Thu Jan 22 12:52:20 2015
+Heading Err
+-0.0827793159026
+Linear Vel
+0.243155634245
+Angular Vel
+-0.28627475085
+dist
+0.26419253654
+pose - x
+5.21162985026
+pose - y
+23.8418529076
+pose - z
+2.58261291008
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00568223058184
+d
+8.33819384404
+pt[E]
+5.2149325797
+pt[N]
+23.8464767288
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.0827793159026
+
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 13:15:02 2015
+ Time 
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 13:22:02 2015
+ Time 
+Thu Jan 22 13:22:04 2015
+Heading Err
+-0.223504464694
+Linear Vel
+0.197550965331
+Angular Vel
+-0.0233952056569
+dist
+9.74712858973
+pose - x
+0.252925506358
+pose - y
+0.0324739915195
+pose - z
+0.220172811551
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0324739915195
+d
+0.252925506358
+pt[E]
+0.252925506358
+pt[N]
+0.0
+Target[E]
+1.51614071246
+Target[N]
+0.0
+Target_Heading_Error
+-0.245874560938
+
+Thu Jan 22 13:22:06 2015
+Heading Err
+-0.208963296017
+Linear Vel
+0.0
+Angular Vel
+-0.243326565767
+dist
+9.27625673919
+pose - x
+0.724754479968
+pose - y
+0.136965815279
+pose - z
+0.194197556312
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.136965815279
+d
+0.724754479968
+pt[E]
+0.724754479968
+pt[N]
+0.0
+Target[E]
+1.66559826612
+Target[N]
+0.0
+Target_Heading_Error
+-0.338759673933
+
+Thu Jan 22 13:22:08 2015
+Heading Err
+0.0580500833956
+Linear Vel
+0.0
+Angular Vel
+-0.0207056716357
+dist
+9.27611806822
+pose - x
+0.724892881199
+pose - y
+0.136946523837
+pose - z
+-0.0728139639375
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.136946523837
+d
+0.724892881199
+pt[E]
+0.724892881199
+pt[N]
+0.0
+Target[E]
+1.66576541002
+Target[N]
+0.0
+Target_Heading_Error
+-0.0717237203827
+
+Thu Jan 22 13:22:10 2015
+Heading Err
+0.213716468421
+Linear Vel
+0.191894564925
+Angular Vel
+0.0122793528857
+dist
+9.04146457248
+pose - x
+0.959060089219
+pose - y
+0.097401976642
+pose - z
+-0.224489486435
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.097401976642
+d
+0.959060089219
+pt[E]
+0.959060089219
+pt[N]
+0.0
+Target[E]
+1.97024070959
+Target[N]
+0.0
+Target_Heading_Error
+0.128460752846
+
+Thu Jan 22 13:22:12 2015
+Heading Err
+0.032664050232
+Linear Vel
+0.4
+Angular Vel
+0.00333266965752
+dist
+8.46873765963
+pose - x
+1.53126516793
+pose - y
+0.00692038795661
+pose - z
+-0.0334812190953
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00692038795661
+d
+1.53126516793
+pt[E]
+1.53126516793
+pt[N]
+0.0
+Target[E]
+3.25254584974
+Target[N]
+0.0
+Target_Heading_Error
+0.0294607529724
+
+Thu Jan 22 13:22:14 2015
+Heading Err
+0.0263526966069
+Linear Vel
+0.4
+Angular Vel
+0.00136094355521
+dist
+7.64862546991
+pose - x
+2.35140469669
+pose - y
+0.0214817399826
+pose - z
+-0.029161275522
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0214817399826
+d
+2.35140469669
+pt[E]
+2.35140469669
+pt[N]
+0.0
+Target[E]
+3.72364685966
+Target[N]
+0.0
+Target_Heading_Error
+0.0135080722986
+
+Thu Jan 22 13:22:16 2015
+Heading Err
+0.130225256899
+Linear Vel
+0.4
+Angular Vel
+0.0135588334009
+dist
+6.81272845317
+pose - x
+3.18730776789
+pose - y
+-0.0222154695083
+pose - z
+-0.126964374121
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0222154695083
+d
+3.18730776789
+pt[E]
+3.18730776789
+pt[N]
+0.0
+Target[E]
+4.55035395784
+Target[N]
+0.0
+Target_Heading_Error
+0.14326132935
+
+Thu Jan 22 13:22:18 2015
+Heading Err
+0.0966800172045
+Linear Vel
+0.4
+Angular Vel
+0.0183165808673
+dist
+6.01843166127
+pose - x
+3.98243660383
+pose - y
+-0.102227366568
+pose - z
+-0.0796934850579
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.102227366568
+d
+3.98243660383
+pt[E]
+3.98243660383
+pt[N]
+0.0
+Target[E]
+4.98350520448
+Target[N]
+0.0
+Target_Heading_Error
+0.181458964959
+
+Thu Jan 22 13:22:20 2015
+Heading Err
+0.0980802871363
+Linear Vel
+0.4
+Angular Vel
+0.0238820479707
+dist
+5.20600143333
+pose - x
+4.79640478611
+pose - y
+-0.158264884807
+pose - z
+-0.0676751336336
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.158264884807
+d
+4.79640478611
+pt[E]
+4.79640478611
+pt[N]
+0.0
+Target[E]
+5.70777245164
+Target[N]
+0.0
+Target_Heading_Error
+0.239616889019
+
+Thu Jan 22 13:22:22 2015
+Heading Err
+0.0269417501767
+Linear Vel
+0.4
+Angular Vel
+0.019714067265
+dist
+4.39471463596
+pose - x
+5.60929415599
+pose - y
+-0.187667053349
+pose - z
+0.0157741374458
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.187667053349
+d
+5.60929415599
+pt[E]
+5.60929415599
+pt[N]
+0.0
+Target[E]
+6.48567439383
+Target[N]
+0.0
+Target_Heading_Error
+0.195178771755
+
+Thu Jan 22 13:22:24 2015
+Heading Err
+0.158675545801
+Linear Vel
+0.0
+Angular Vel
+0.252275228284
+dist
+3.79595803981
+pose - x
+6.21030817198
+pose - y
+-0.218021303072
+pose - z
+-0.10120880172
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.218021303072
+d
+6.21030817198
+pt[E]
+6.21030817198
+pt[N]
+0.0
+Target[E]
+7.0552140907
+Target[N]
+0.0
+Target_Heading_Error
+0.353742067001
+
+Thu Jan 22 13:22:26 2015
+Heading Err
+-0.0895006399245
+Linear Vel
+0.0
+Angular Vel
+0.10731124429
+dist
+3.79432831807
+pose - x
+6.2119428343
+pose - y
+-0.218060300591
+pose - z
+0.147002388928
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.218060300591
+d
+6.2119428343
+pt[E]
+6.2119428343
+pt[N]
+0.0
+Target[E]
+7.05681058369
+Target[N]
+0.0
+Target_Heading_Error
+0.105585082141
+
+Thu Jan 22 13:22:28 2015
+Heading Err
+-0.144523697179
+Linear Vel
+0.0
+Angular Vel
+0.0399076489565
+dist
+3.76362153302
+pose - x
+6.242404246
+pose - y
+-0.212887748172
+pose - z
+0.201118504701
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.212887748172
+d
+6.242404246
+pt[E]
+6.242404246
+pt[N]
+0.0
+Target[E]
+7.0923797125
+Target[N]
+0.0
+Target_Heading_Error
+0.0442962552538
+
+Thu Jan 22 13:22:30 2015
+Heading Err
+-0.314847074671
+Linear Vel
+0.207855796414
+Angular Vel
+-0.023776107756
+dist
+3.49357340552
+pose - x
+6.50818895974
+pose - y
+-0.110954039425
+pose - z
+0.346611886104
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.110954039425
+d
+6.50818895974
+pt[E]
+6.50818895974
+pt[N]
+0.0
+Target[E]
+7.49224806023
+Target[N]
+0.0
+Target_Heading_Error
+-0.234334674476
+
+Thu Jan 22 13:22:32 2015
+Heading Err
+-0.262348973307
+Linear Vel
+0.4
+Angular Vel
+-0.0293208496435
+dist
+2.90621461542
+pose - x
+7.09441795947
+pose - y
+0.060633296088
+pose - z
+0.241484135813
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.060633296088
+d
+7.09441795947
+pt[E]
+7.09441795947
+pt[N]
+0.0
+Target[E]
+8.20848063844
+Target[N]
+0.0
+Target_Heading_Error
+-0.295855883153
+
+Thu Jan 22 13:22:34 2015
+Heading Err
+-0.0548325433376
+Linear Vel
+0.4
+Angular Vel
+-0.0135521305396
+dist
+2.07507879457
+pose - x
+7.92961958178
+pose - y
+0.139559763358
+pose - z
+-0.0124734255895
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.139559763358
+d
+7.92961958178
+pt[E]
+7.92961958178
+pt[N]
+0.0
+Target[E]
+8.86663594194
+Target[N]
+0.0
+Target_Heading_Error
+-0.135380257107
+
+Thu Jan 22 13:22:36 2015
+Heading Err
+0.131587562397
+Linear Vel
+0.4
+Angular Vel
+0.0120852471981
+dist
+1.24386685345
+pose - x
+8.75780391732
+pose - y
+0.0644487493962
+pose - z
+-0.183423995481
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0644487493962
+d
+8.75780391732
+pt[E]
+8.75780391732
+pt[N]
+0.0
+Target[E]
+9.8581805462
+Target[N]
+0.0
+Target_Heading_Error
+0.124921112226
+
+Thu Jan 22 13:22:38 2015
+Heading Err
+-0.0616051364431
+Linear Vel
+0.293116961085
+Angular Vel
+-0.00606109624458
+dist
+0.459382049982
+pose - x
+9.54062980307
+pose - y
+0.00330000292096
+pose - z
+0.0544215050762
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00330000292096
+d
+9.54062980307
+pt[E]
+9.54062980307
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+-0.0616051364431
+
+Thu Jan 22 13:22:40 2015
+Heading Err
+0.0212532839518
+Linear Vel
+0.118230983169
+Angular Vel
+0.0
+dist
+0.0403574285059
+pose - x
+9.95966069389
+pose - y
+0.00120930496843
+pose - z
+-0.051222636745
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00120930496843
+d
+9.95966069389
+pt[E]
+9.95966069389
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0212532839518
+
+Thu Jan 22 13:22:47 2015
+Heading Err
+2.14591396707
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.2993785341
+pose - x
+10.0049958941
+pose - y
+-0.001511777964
+pose - z
+-0.0676663948914
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.00363301293971
+d
+-0.00374775238569
+pt[E]
+10.0018200695
+pt[N]
+-0.00327612501705
+Target[E]
+9.05090154592
+Target[N]
+1.70837721735
+Target_Heading_Error
+2.14741663744
+
+Thu Jan 22 13:22:49 2015
+Heading Err
+1.72215489208
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.2928272038
+pose - x
+9.98472181744
+pose - y
+-0.00526736137482
+pose - z
+0.35419385296
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0159135912665
+d
+0.00281523908874
+pt[E]
+9.99863279904
+pt[N]
+0.00246096173344
+Target[E]
+9.2909701234
+Target[N]
+1.27625377789
+Target_Heading_Error
+1.71278049852
+
+Thu Jan 22 13:22:51 2015
+Heading Err
+0.889231141066
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.2890473372
+pose - x
+9.98202149506
+pose - y
+-0.00244172048799
+pose - z
+1.18702098675
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0169018451979
+d
+0.00659668610417
+pt[E]
+9.99679636602
+pt[N]
+0.00576654115625
+Target[E]
+9.29761407484
+Target[N]
+1.26429466529
+Target_Heading_Error
+0.879134581759
+
+Thu Jan 22 13:22:53 2015
+Heading Err
+0.148018190026
+Linear Vel
+0.0
+Angular Vel
+0.131691653712
+dist
+10.2798826513
+pose - x
+9.9812906526
+pose - y
+0.00762930263223
+pose - z
+1.92864610197
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0126497952702
+d
+0.0157552727207
+pt[E]
+9.99234856317
+pt[N]
+0.0137725862861
+Target[E]
+9.25142988488
+Target[N]
+1.34742620721
+Target_Heading_Error
+0.140957478016
+
+Thu Jan 22 13:22:55 2015
+Heading Err
+0.1503137347
+Linear Vel
+0.138146275462
+Angular Vel
+0.0147253086425
+dist
+10.1669366257
+pose - x
+9.9359908403
+pose - y
+0.111659616318
+pose - z
+1.92741119582
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00172736932673
+d
+0.128693661992
+pt[E]
+9.93750083277
+pt[N]
+0.112498501021
+Target[E]
+8.83413363064
+Target[N]
+2.09855946485
+Target_Heading_Error
+0.149723340392
+
+Thu Jan 22 13:22:57 2015
+Heading Err
+0.194265806051
+Linear Vel
+0.297749991319
+Angular Vel
+0.0261952362009
+dist
+9.7695819389
+pose - x
+9.81025648087
+pose - y
+0.496696885969
+pose - z
+1.89134198577
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0753516537658
+d
+0.526338795698
+pt[E]
+9.74438728446
+pt[N]
+0.460102887965
+Target[E]
+9.22671273502
+Target[N]
+1.39191707697
+Target_Heading_Error
+0.257124650032
+
+Thu Jan 22 13:22:59 2015
+Heading Err
+0.0513949610964
+Linear Vel
+0.0
+Angular Vel
+0.147472740317
+dist
+9.40693726765
+pose - x
+9.69332884712
+pose - y
+0.847507553496
+pose - z
+2.04175593013
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.143507232811
+d
+0.889787572048
+pt[E]
+9.56788095538
+pt[N]
+0.777814280308
+Target[E]
+9.11558771547
+Target[N]
+1.59194211215
+Target_Heading_Error
+0.189025149954
+
+Thu Jan 22 13:23:01 2015
+Heading Err
+-0.0898231104751
+Linear Vel
+0.112442245141
+Angular Vel
+0.00374127072059
+dist
+9.37067223378
+pose - x
+9.67232880442
+pose - y
+0.877263905775
+pose - z
+2.1826161278
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.139600854823
+d
+0.925997826199
+pt[E]
+9.55029570142
+pt[N]
+0.809467737444
+Target[E]
+9.09526948963
+Target[N]
+1.62851491867
+Target_Heading_Error
+0.0431846278179
+
+Thu Jan 22 13:23:03 2015
+Heading Err
+0.00237716471848
+Linear Vel
+0.235960887919
+Angular Vel
+0.011201175821
+dist
+9.05722965831
+pose - x
+9.50157167926
+pose - y
+1.14065769292
+pose - z
+2.08857364122
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.118247602257
+d
+1.2391724125
+pt[E]
+9.39820467736
+pt[N]
+1.08323158076
+Target[E]
+8.92667915193
+Target[N]
+1.93197752652
+Target_Heading_Error
+0.110512279211
+
+Thu Jan 22 13:23:05 2015
+Heading Err
+0.0836546944098
+Linear Vel
+0.4
+Angular Vel
+0.0260950524144
+dist
+8.33263608744
+pose - x
+9.18751290477
+pose - y
+1.79600389796
+pose - z
+2.01367999855
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.161975091363
+d
+1.96456848982
+pt[E]
+9.0459212001
+pt[N]
+1.71734183981
+Target[E]
+8.60562019656
+Target[N]
+2.50988364619
+Target_Heading_Error
+0.241004857676
+
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 13:25:46 2015
+ Time 
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 13:30:08 2015
+ Time 
+Thu Jan 22 13:31:35 2015
+Heading Err
+0.0
+Linear Vel
+0.1
+Angular Vel
+0.0
+dist
+10.0
+pose - x
+0.0
+pose - y
+0.0
+pose - z
+0.0
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0
+d
+0.0
+pt[E]
+0.0
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0
+
+Thu Jan 22 13:31:37 2015
+Heading Err
+0.0377870344948
+Linear Vel
+0.210805353592
+Angular Vel
+0.00411831800221
+dist
+9.71379029448
+pose - x
+0.286211934327
+pose - y
+-0.00658029134666
+pose - z
+-0.0371096169626
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00658029134666
+d
+0.286211934327
+pt[E]
+0.286211934327
+pt[N]
+0.0
+Target[E]
+2.02492943318
+Target[N]
+0.0
+Target_Heading_Error
+0.0408941650188
+
+Thu Jan 22 13:31:39 2015
+Heading Err
+0.207123409217
+Linear Vel
+0.4
+Angular Vel
+0.031381067428
+dist
+9.07508717144
+pose - x
+0.925692210282
+pose - y
+-0.11893404315
+pose - z
+-0.194017480231
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.11893404315
+d
+0.925692210282
+pt[E]
+0.925692210282
+pt[N]
+0.0
+Target[E]
+1.89543245216
+Target[N]
+0.0
+Target_Heading_Error
+0.31605329261
+
+Thu Jan 22 13:31:41 2015
+Heading Err
+-0.0890457406293
+Linear Vel
+0.0
+Angular Vel
+0.0751361904647
+dist
+8.8800715503
+pose - x
+1.12134666255
+pose - y
+-0.158699879478
+pose - z
+0.106918156142
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.158699879478
+d
+1.12134666255
+pt[E]
+1.12134666255
+pt[N]
+0.0
+Target[E]
+2.03215401438
+Target[N]
+0.0
+Target_Heading_Error
+0.0655908580356
+
+Thu Jan 22 13:31:43 2015
+Heading Err
+-0.0192875546525
+Linear Vel
+0.166988566793
+Angular Vel
+0.0106738127046
+dist
+8.70475028034
+pose - x
+1.29638055208
+pose - y
+-0.140306624894
+pose - z
+0.0354066501379
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.140306624894
+d
+1.29638055208
+pt[E]
+1.29638055208
+pt[N]
+0.0
+Target[E]
+2.23230838305
+Target[N]
+0.0
+Target_Heading_Error
+0.11339703623
+
+Thu Jan 22 13:31:45 2015
+Heading Err
+0.0837229083465
+Linear Vel
+0.362012631775
+Angular Vel
+0.0231619392567
+dist
+8.2019014192
+pose - x
+1.79977340414
+pose - y
+-0.165742773011
+pose - z
+-0.063513685267
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.165742773011
+d
+1.79977340414
+pt[E]
+1.79977340414
+pt[N]
+0.0
+Target[E]
+2.70170730586
+Target[N]
+0.0
+Target_Heading_Error
+0.245249866381
+
+Thu Jan 22 13:31:47 2015
+Heading Err
+0.0364375534848
+Linear Vel
+0.0
+Angular Vel
+0.194057943094
+dist
+7.86857286132
+pose - x
+2.1341005609
+pose - y
+-0.205097264511
+pose - z
+-0.0103692309063
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.205097264511
+d
+2.1341005609
+pt[E]
+2.1341005609
+pt[N]
+0.0
+Target[E]
+2.99195057421
+Target[N]
+0.0
+Target_Heading_Error
+0.245046874405
+
+Thu Jan 22 13:31:49 2015
+Heading Err
+-0.117257293075
+Linear Vel
+0.0
+Angular Vel
+0.0528752186202
+dist
+7.86204180092
+pose - x
+2.14061506546
+pose - y
+-0.204376442392
+pose - z
+0.143255560793
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.204376442392
+d
+2.14061506546
+pt[E]
+2.14061506546
+pt[N]
+0.0
+Target[E]
+2.99920542948
+Target[N]
+0.0
+Target_Heading_Error
+0.0904326906999
+
+Thu Jan 22 13:31:51 2015
+Heading Err
+-0.361658176073
+Linear Vel
+0.168741021374
+Angular Vel
+-0.0200832212426
+dist
+7.69342559055
+pose - x
+2.30814667431
+pose - y
+-0.155530490431
+pose - z
+0.38187557916
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.155530490431
+d
+2.30814667431
+pt[E]
+2.30814667431
+pt[N]
+0.0
+Target[E]
+3.22307093488
+Target[N]
+0.0
+Target_Heading_Error
+-0.213492469086
+
+Thu Jan 22 13:31:53 2015
+Heading Err
+-0.369357560307
+Linear Vel
+0.0
+Angular Vel
+-0.260728279606
+dist
+7.21076941626
+pose - x
+2.78930167371
+pose - y
+0.0320190831757
+pose - z
+0.364917092646
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0320190831757
+d
+2.78930167371
+pt[E]
+2.78930167371
+pt[N]
+0.0
+Target[E]
+4.05609534658
+Target[N]
+0.0
+Target_Heading_Error
+-0.390187401378
+
+Thu Jan 22 13:31:55 2015
+Heading Err
+-0.0769738868869
+Linear Vel
+0.0
+Angular Vel
+-0.105539862502
+dist
+7.16209605119
+pose - x
+2.83805764418
+pose - y
+0.0469205538134
+pose - z
+0.0704226078881
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0469205538134
+d
+2.83805764418
+pt[E]
+2.83805764418
+pt[N]
+0.0
+Target[E]
+4.01126860427
+Target[N]
+0.0
+Target_Heading_Error
+-0.110394585223
+
+Thu Jan 22 13:31:57 2015
+Heading Err
+0.0619680070266
+Linear Vel
+0.160974468842
+Angular Vel
+0.00365482812077
+dist
+6.99583770132
+pose - x
+3.00425336505
+pose - y
+0.0356954159919
+pose - z
+-0.0670704082546
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0356954159919
+d
+3.00425336505
+pt[E]
+3.00425336505
+pt[N]
+0.0
+Target[E]
+4.24372791144
+Target[N]
+0.0
+Target_Heading_Error
+0.0382795365604
+
+Thu Jan 22 13:31:59 2015
+Heading Err
+0.0739713503449
+Linear Vel
+0.36104100014
+Angular Vel
+0.00851128496676
+dist
+6.49116277404
+pose - x
+3.50884632208
+pose - y
+-0.0108668643342
+pose - z
+-0.0722972482174
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0108668643342
+d
+3.50884632208
+pt[E]
+3.50884632208
+pt[N]
+0.0
+Target[E]
+5.08156977317
+Target[N]
+0.0
+Target_Heading_Error
+0.0792067219683
+
+Thu Jan 22 13:32:01 2015
+Heading Err
+0.116738721821
+Linear Vel
+0.4
+Angular Vel
+0.0173086321812
+dist
+5.69767547953
+pose - x
+4.30282642616
+pose - y
+-0.075624993501
+pose - z
+-0.1034653765
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.075624993501
+d
+4.30282642616
+pt[E]
+4.30282642616
+pt[N]
+0.0
+Target[E]
+5.36799641698
+Target[N]
+0.0
+Target_Heading_Error
+0.174344493319
+
+Thu Jan 22 13:32:03 2015
+Heading Err
+0.0226253569381
+Linear Vel
+0.4
+Angular Vel
+0.016245212232
+dist
+4.90629913738
+pose - x
+5.09611999072
+pose - y
+-0.154052199027
+pose - z
+0.00877866450352
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.154052199027
+d
+5.09611999072
+pt[E]
+5.09611999072
+pt[N]
+0.0
+Target[E]
+6.01299241432
+Target[N]
+0.0
+Target_Heading_Error
+0.157685731566
+
+Thu Jan 22 13:32:05 2015
+Heading Err
+-0.062263408737
+Linear Vel
+0.4
+Angular Vel
+-0.00278058353313
+dist
+4.08886233913
+pose - x
+5.91165232051
+pose - y
+-0.0648727984937
+pose - z
+0.0781298075217
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0648727984937
+d
+5.91165232051
+pt[E]
+5.91165232051
+pt[N]
+0.0
+Target[E]
+7.0105667026
+Target[N]
+0.0
+Target_Heading_Error
+-0.0191647078979
+
+Thu Jan 22 13:32:07 2015
+Heading Err
+-0.10976295138
+Linear Vel
+0.4
+Angular Vel
+-0.0104435414035
+dist
+3.30109621148
+pose - x
+6.6989089106
+pose - y
+-0.00581523233318
+pose - z
+0.111524558727
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00581523233318
+d
+6.6989089106
+pt[E]
+6.6989089106
+pt[N]
+0.0
+Target[E]
+8.48114472901
+Target[N]
+0.0
+Target_Heading_Error
+-0.108261684288
+
+Thu Jan 22 13:32:09 2015
+Heading Err
+-0.134896333748
+Linear Vel
+0.4
+Angular Vel
+-0.018484251976
+dist
+2.50627516212
+pose - x
+7.49526816542
+pose - y
+0.0879410320975
+pose - z
+0.0998007908454
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0879410320975
+d
+7.49526816542
+pt[E]
+7.49526816542
+pt[N]
+0.0
+Target[E]
+8.52801867683
+Target[N]
+0.0
+Target_Heading_Error
+-0.184748123581
+
+Thu Jan 22 13:32:11 2015
+Heading Err
+0.0666076992478
+Linear Vel
+0.4
+Angular Vel
+0.00193741902208
+dist
+1.6855783039
+pose - x
+8.31728227066
+pose - y
+0.0981593701464
+pose - z
+-0.124875497309
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0981593701464
+d
+8.31728227066
+pt[E]
+8.31728227066
+pt[N]
+0.0
+Target[E]
+9.32683912289
+Target[N]
+0.0
+Target_Heading_Error
+0.0279500101172
+
+Thu Jan 22 13:32:13 2015
+Heading Err
+0.0360649407846
+Linear Vel
+0.4
+Angular Vel
+0.00403786170926
+dist
+0.876212380653
+pose - x
+9.12392855413
+pose - y
+0.0157148891876
+pose - z
+-0.0540009254215
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0157148891876
+d
+9.12392855413
+pt[E]
+9.12392855413
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0360649407846
+
+Thu Jan 22 13:32:15 2015
+Heading Err
+0.0316757915953
+Linear Vel
+0.197674919491
+Angular Vel
+0.00220235867142
+dist
+0.235704970331
+pose - x
+9.76446306032
+pose - y
+0.00889848767962
+pose - z
+-0.0694374170903
+ab length
+10.0
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00889848767962
+d
+9.76446306032
+pt[E]
+9.76446306032
+pt[N]
+0.0
+Target[E]
+10.0
+Target[N]
+0.0
+Target_Heading_Error
+0.0316757915953
+
+Thu Jan 22 13:32:23 2015
+Heading Err
+2.28316079142
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.3245721691
+pose - x
+10.0155845984
+pose - y
+-0.0244502109763
+pose - z
+-0.205096527736
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.00174931799205
+d
+-0.0289418798934
+pt[E]
+10.0140554194
+pt[N]
+-0.0252997548935
+Target[E]
+8.91347101147
+Target[N]
+1.95575217935
+Target_Heading_Error
+2.28376326133
+
+Thu Jan 22 13:32:25 2015
+Heading Err
+1.75212012793
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.320423674
+pose - x
+10.0091442929
+pose - y
+-0.0232820117582
+pose - z
+0.325453670476
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00331319425739
+d
+-0.0247930011904
+pt[E]
+10.0120405458
+pt[N]
+-0.0216729823875
+Target[E]
+9.04343396531
+Target[N]
+1.72181886244
+Target_Heading_Error
+1.75077998276
+
+Thu Jan 22 13:32:27 2015
+Heading Err
+1.07623596184
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.3212206895
+pose - x
+10.0241805236
+pose - y
+-0.0158308872015
+pose - z
+1.00296195417
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0134494222225
+d
+-0.0255817856159
+pt[E]
+10.0124236134
+pt[N]
+-0.0223625040324
+Target[E]
+9.28053508526
+Target[N]
+1.29503684654
+Target_Heading_Error
+1.08385697295
+
+Thu Jan 22 13:32:29 2015
+Heading Err
+0.516133904451
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+10.3120007429
+pose - x
+10.0269647603
+pose - y
+-0.00372059867797
+pose - z
+1.56387153317
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0217645590042
+d
+-0.0163476336569
+pt[E]
+10.0079391127
+pt[N]
+-0.0142904029086
+Target[E]
+9.34326216581
+Target[N]
+1.18212810153
+Target_Heading_Error
+0.529924125406
+
+Thu Jan 22 13:32:31 2015
+Heading Err
+0.102919432961
+Linear Vel
+0.0
+Angular Vel
+0.079324697493
+dist
+10.3131100787
+pose - x
+10.0257995567
+pose - y
+-0.00564147137007
+pose - z
+1.97689655892
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0198131295027
+d
+-0.0174609055768
+pt[E]
+10.0084797654
+pt[N]
+-0.0152635776576
+Target[E]
+9.33118555418
+Target[N]
+1.20386600247
+Target_Heading_Error
+0.115204002754
+
+Thu Jan 22 13:32:33 2015
+Heading Err
+-0.177069209678
+Linear Vel
+0.181170525717
+Angular Vel
+-0.0176705775019
+dist
+10.1036735157
+pose - x
+9.90275104703
+pose - y
+0.165564495571
+pose - z
+2.25450820141
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00460565290366
+d
+0.191957675044
+pt[E]
+9.90677711203
+pt[N]
+0.167801198347
+Target[E]
+8.99992165023
+Target[N]
+1.80014102959
+Target_Heading_Error
+-0.179079803223
+
+Thu Jan 22 13:32:35 2015
+Heading Err
+0.0145916310128
+Linear Vel
+0.392053825223
+Angular Vel
+-0.00167601565888
+dist
+9.56981355792
+pose - x
+9.61045450105
+pose - y
+0.613997327265
+pose - z
+2.0588787975
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0423405705388
+d
+0.725910249086
+pt[E]
+9.64746681886
+pt[N]
+0.634559726049
+Target[E]
+9.06581239716
+Target[N]
+1.68153768511
+Target_Heading_Error
+-0.0163208237233
+
+Thu Jan 22 13:32:37 2015
+Heading Err
+0.0193834621194
+Linear Vel
+0.4
+Angular Vel
+0.000605478906513
+dist
+8.77071557102
+pose - x
+9.24232903016
+pose - y
+1.32353622899
+pose - z
+2.05628149472
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0195575774262
+d
+1.52493637544
+pt[E]
+9.25942542877
+pt[N]
+1.33303422822
+Target[E]
+8.58036900181
+Target[N]
+2.55533579674
+Target_Heading_Error
+0.00762719402442
+
+Thu Jan 22 13:32:39 2015
+Heading Err
+0.220932192896
+Linear Vel
+0.4
+Angular Vel
+0.026593205836
+dist
+7.96157674861
+pose - x
+8.92474154244
+pose - y
+2.07301594133
+pose - z
+1.86535310159
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0668005337368
+d
+2.33433363773
+pt[E]
+8.86634736982
+pt[N]
+2.04057473432
+Target[E]
+8.33582859075
+Target[N]
+2.99550853665
+Target_Heading_Error
+0.273615649618
+
+Thu Jan 22 13:32:41 2015
+Heading Err
+0.0639713237158
+Linear Vel
+0.0
+Angular Vel
+0.144726461234
+dist
+7.77305151166
+pose - x
+8.87578065926
+pose - y
+2.26214766529
+pose - z
+2.02882830974
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.115851506265
+d
+2.52344201721
+pt[E]
+8.7745082221
+pt[N]
+2.20588520021
+Target[E]
+8.30093627918
+Target[N]
+3.05831469748
+Target_Heading_Error
+0.167316725459
+
+Thu Jan 22 13:32:43 2015
+Heading Err
+-0.0524224489264
+Linear Vel
+0.0
+Angular Vel
+0.064621569273
+dist
+7.78206849353
+pose - x
+8.87931036603
+pose - y
+2.25377578775
+pose - z
+2.14507883792
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.114871281977
+d
+2.51440950239
+pt[E]
+8.77889479908
+pt[N]
+2.19798936166
+Target[E]
+8.30447245412
+Target[N]
+3.05194958258
+Target_Heading_Error
+0.0498665917207
+
+Thu Jan 22 13:32:45 2015
+Heading Err
+-0.170508967762
+Linear Vel
+0.146124378961
+Angular Vel
+-0.00786158231395
+dist
+7.65556844611
+pose - x
+8.80218595054
+pose - y
+2.35536981988
+pose - z
+2.26104732975
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0967908365648
+d
+2.64067359199
+pt[E]
+8.7175755365
+pt[N]
+2.3083640343
+Target[E]
+8.22586148991
+Target[N]
+3.19344931816
+Target_Heading_Error
+-0.0878463390948
+
+Thu Jan 22 13:32:47 2015
+Heading Err
+-0.175965467922
+Linear Vel
+0.329790435185
+Angular Vel
+-0.017151754621
+dist
+7.19805798933
+pose - x
+8.50081857132
+pose - y
+2.71061941456
+pose - z
+2.25467618644
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00587280368515
+d
+3.09757454743
+pt[E]
+8.49568481724
+pt[N]
+2.70776732896
+Target[E]
+7.63185832342
+Target[N]
+4.26265501785
+Target_Heading_Error
+-0.173479679221
+
+Thu Jan 22 13:32:50 2015
+Heading Err
+-0.16715459403
+Linear Vel
+0.4
+Angular Vel
+-0.0237716822002
+dist
+6.40705934271
+pose - x
+8.0269651092
+pose - y
+3.3530635165
+pose - z
+2.23001056915
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0963512112499
+d
+3.88929531793
+pt[E]
+8.11119122158
+pt[N]
+3.39985580116
+Target[E]
+7.61901301824
+Target[N]
+4.28577656717
+Target_Heading_Error
+-0.246902675386
+
+Thu Jan 22 13:32:52 2015
+Heading Err
+-0.0581675455023
+Linear Vel
+0.0
+Angular Vel
+-0.177297431972
+dist
+6.07538008673
+pose - x
+7.80901008984
+pose - y
+3.61300589258
+pose - z
+2.10961831537
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.160638999834
+d
+4.22237415182
+pt[E]
+7.94943384038
+pt[N]
+3.69101908732
+Target[E]
+7.50831106276
+Target[N]
+4.48504008703
+Target_Heading_Error
+-0.20676500051
+
+Thu Jan 22 13:32:54 2015
+Heading Err
+0.223438748999
+Linear Vel
+0.122351774985
+Angular Vel
+0.00839192722235
+dist
+6.0179384693
+pose - x
+7.79303623448
+pose - y
+3.66947169474
+pose - z
+1.82999668945
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.147180444053
+d
+4.27949173357
+pt[E]
+7.92169509055
+pt[N]
+3.740948837
+Target[E]
+7.47190402427
+Target[N]
+4.55057275632
+Target_Heading_Error
+0.0903040223828
+
+Thu Jan 22 13:32:56 2015
+Heading Err
+0.34733114498
+Linear Vel
+0.264900991809
+Angular Vel
+0.0313697451714
+dist
+5.67127697004
+pose - x
+7.71911530534
+pose - y
+4.02307379729
+pose - z
+1.72349738804
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0400746005633
+d
+4.62449476107
+pt[E]
+7.75414680901
+pt[N]
+4.04253574378
+Target[E]
+7.166028227
+Target[N]
+5.10114919141
+Target_Heading_Error
+0.321317639749
+
+Thu Jan 22 13:32:58 2015
+Heading Err
+0.120042621954
+Linear Vel
+0.0
+Angular Vel
+0.116391462808
+dist
+5.59482952422
+pose - x
+7.70724780035
+pose - y
+4.10378444586
+pose - z
+1.95584104553
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.011252110457
+d
+4.70081193169
+pt[E]
+7.71708391457
+pt[N]
+4.10924895377
+Target[E]
+6.95860609805
+Target[N]
+5.47450902352
+Target_Heading_Error
+0.114849338481
+
+Thu Jan 22 13:33:00 2015
+Heading Err
+-0.119533315118
+Linear Vel
+0.167726146923
+Angular Vel
+-0.0140134932978
+dist
+5.40810467235
+pose - x
+7.60109053236
+pose - y
+4.2584892503
+pose - z
+2.19208078275
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.028918963985
+d
+4.88760278893
+pt[E]
+7.62637025515
+pt[N]
+4.27253354074
+Target[E]
+6.9984734986
+Target[N]
+5.40274770251
+Target_Heading_Error
+-0.136549419626
+
+Thu Jan 22 13:33:02 2015
+Heading Err
+-0.232107780496
+Linear Vel
+0.376639095681
+Angular Vel
+-0.0304062634064
+dist
+4.89121784401
+pose - x
+7.2852905614
+pose - y
+4.67548163982
+pose - z
+2.28905161338
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.102468400069
+d
+5.40548574388
+pt[E]
+7.3748640589
+pt[N]
+4.72524469398
+Target[E]
+6.88894065612
+Target[N]
+5.59990681898
+Target_Heading_Error
+-0.313210263284
+
+Thu Jan 22 13:33:04 2015
+Heading Err
+-0.0407925376616
+Linear Vel
+0.4
+Angular Vel
+-0.0231129850903
+dist
+4.07526163004
+pose - x
+6.79903704359
+pose - y
+5.34333169824
+pose - z
+2.06880638078
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.203193790747
+d
+6.22543731549
+pt[E]
+6.97666037424
+pt[N]
+5.44201132638
+Target[E]
+6.55909993771
+Target[N]
+6.19362011212
+Target_Heading_Error
+-0.222978019529
+
+Thu Jan 22 13:33:06 2015
+Heading Err
+0.0671736177626
+Linear Vel
+0.4
+Angular Vel
+-0.00244934669763
+dist
+3.24609443976
+pose - x
+6.46318476281
+pose - y
+6.10237692897
+pose - z
+1.97123072004
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.128156554945
+d
+7.05206651292
+pt[E]
+6.5752137478
+pt[N]
+6.16461525397
+Target[E]
+6.11170377911
+Target[N]
+6.9989331976
+Target_Heading_Error
+-0.026813635471
+
+Thu Jan 22 13:33:08 2015
+Heading Err
+-0.126954355295
+Linear Vel
+0.4
+Angular Vel
+-0.0200979105849
+dist
+2.45088888137
+pose - x
+6.08137376782
+pose - y
+6.80057119162
+pose - z
+2.15470501075
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.122846306076
+d
+7.84782191853
+pt[E]
+6.18876076012
+pt[N]
+6.86023063179
+Target[E]
+5.72104080645
+Target[N]
+7.70212654839
+Target_Heading_Error
+-0.203678853182
+
+Thu Jan 22 13:33:10 2015
+Heading Err
+-0.136826151814
+Linear Vel
+0.4
+Angular Vel
+-0.0224589786705
+dist
+1.65107002799
+pose - x
+5.64566399984
+pose - y
+7.48041116197
+pose - z
+2.10940323938
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.173565694099
+d
+8.65370834408
+pt[E]
+5.79738771422
+pt[N]
+7.56470211441
+Target[E]
+5.36395964233
+Target[N]
+8.34487264381
+Target_Heading_Error
+-0.223585930235
+
+Thu Jan 22 13:33:12 2015
+Heading Err
+-0.0510057941991
+Linear Vel
+0.4
+Angular Vel
+-0.0047291046785
+dist
+0.841263523396
+pose - x
+5.25496070682
+pose - y
+8.19830220546
+pose - z
+1.92971336145
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.16646310987
+d
+9.47100031564
+pt[E]
+5.40047564552
+pt[N]
+8.27914383807
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+-0.0510057941991
+
+Thu Jan 22 13:33:14 2015
+Heading Err
+0.325152253365
+Linear Vel
+0.201808197067
+Angular Vel
+0.0306362169284
+dist
+0.246531605127
+pose - x
+5.11019816543
+pose - y
+8.77946837718
+pose - z
+1.70904625993
+ab length
+10.295630141
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0107690955951
+d
+10.0493338582
+pt[E]
+5.1196120487
+pt[N]
+8.78469831233
+Target[E]
+5.0
+Target[N]
+9.0
+Target_Heading_Error
+0.325152253365
+
+Thu Jan 22 13:33:22 2015
+Heading Err
+-0.657870990171
+Linear Vel
+0.0
+Angular Vel
+-0.3
+dist
+5.32508624005
+pose - x
+5.06242347269
+pose - y
+9.03992533677
+pose - z
+1.85626058579
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.0431308415272
+d
+0.0602532403133
+pt[E]
+5.02237749167
+pt[N]
+9.05594372918
+Target[E]
+5.46554152398
+Target[N]
+10.16385381
+Target_Heading_Error
+-0.629840849614
+
+Thu Jan 22 13:33:24 2015
+Heading Err
+-0.161666050399
+Linear Vel
+0.0
+Angular Vel
+-0.126677927091
+dist
+5.33817912334
+pose - x
+5.06146230455
+pose - y
+9.02624609011
+pose - z
+1.36082033052
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0473187639854
+d
+0.0471954097523
+pt[E]
+5.01752793515
+pt[N]
+9.04381983787
+Target[E]
+5.45250695758
+Target[N]
+10.131267394
+Target_Heading_Error
+-0.130150972854
+
+Thu Jan 22 13:33:26 2015
+Heading Err
+-0.040806333203
+Linear Vel
+0.1054853974
+Angular Vel
+-0.000714457858583
+dist
+5.33348960805
+pose - x
+5.06431037524
+pose - y
+9.03016931115
+pose - z
+1.24019103244
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0485060835148
+d
+0.0518957759431
+pt[E]
+5.01927360733
+pt[N]
+9.04818401832
+Target[E]
+5.45208758021
+Target[N]
+10.1302189505
+Target_Heading_Error
+-0.00830280702611
+
+Thu Jan 22 13:33:28 2015
+Heading Err
+-0.0859042955028
+Linear Vel
+0.236495937319
+Angular Vel
+-0.00601076972096
+dist
+5.00063299795
+pose - x
+5.17314127086
+pose - y
+9.34501153987
+pose - z
+1.28271817856
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0326235650801
+d
+0.384638226542
+pt[E]
+5.14285105111
+pt[N]
+9.35712762777
+Target[E]
+5.61156527341
+Target[N]
+10.5289131835
+Target_Heading_Error
+-0.0665843569906
+
+Thu Jan 22 13:33:30 2015
+Heading Err
+-0.153889817729
+Linear Vel
+0.4
+Angular Vel
+-0.0203064302458
+dist
+4.32217173426
+pose - x
+5.33846680655
+pose - y
+10.0099528891
+pose - z
+1.33010569586
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.060828546035
+d
+1.0634211326
+pt[E]
+5.39494469368
+pt[N]
+9.98736173421
+Target[E]
+5.80842806741
+Target[N]
+11.0210701685
+Target_Heading_Error
+-0.194397665103
+
+Thu Jan 22 13:33:32 2015
+Heading Err
+-0.213214852884
+Linear Vel
+0.4
+Angular Vel
+-0.0310725619715
+dist
+3.50443082152
+pose - x
+5.56621624338
+pose - y
+10.8022977746
+pose - z
+1.3625057755
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.143638005537
+d
+1.88367890738
+pt[E]
+5.69958078345
+pt[N]
+10.7489519586
+Target[E]
+6.04539864409
+Target[N]
+11.6134966102
+Target_Heading_Error
+-0.325269273314
+
+Thu Jan 22 13:33:34 2015
+Heading Err
+-0.058763750873
+Linear Vel
+0.4
+Angular Vel
+-0.0227522981681
+dist
+2.6839028339
+pose - x
+5.80778280273
+pose - y
+11.5954308959
+pose - z
+1.1692674831
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.213911332235
+d
+2.70980009111
+pt[E]
+6.00639448862
+pt[N]
+11.5159862216
+Target[E]
+6.32168934311
+Target[N]
+12.3042233578
+Target_Heading_Error
+-0.225808945659
+
+Thu Jan 22 13:33:36 2015
+Heading Err
+0.0106322851979
+Linear Vel
+0.0
+Angular Vel
+-0.128021227268
+dist
+2.17764900021
+pose - x
+5.9788556376
+pose - y
+12.0766125301
+pose - z
+1.07209581049
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.233780565194
+d
+3.22010087841
+pt[E]
+6.19591544316
+pt[N]
+11.9897886079
+Target[E]
+6.50411906886
+Target[N]
+12.7602976721
+Target_Heading_Error
+-0.156399177101
+
+Thu Jan 22 13:33:38 2015
+Heading Err
+0.169796396038
+Linear Vel
+0.154396086443
+Angular Vel
+0.0039484830689
+dist
+2.04042098655
+pose - x
+6.06196837911
+pose - y
+12.1879805518
+pose - z
+0.923314926513
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.197973366886
+d
+3.35437078795
+pt[E]
+6.24578203568
+pt[N]
+12.1144550892
+Target[E]
+6.56713171607
+Target[N]
+12.9178292902
+Target_Heading_Error
+0.0420447037747
+
+Thu Jan 22 13:33:40 2015
+Heading Err
+0.13942248136
+Linear Vel
+0.338987722435
+Angular Vel
+0.0131446370968
+dist
+1.56753882293
+pose - x
+6.34914627409
+pose - y
+12.5739679566
+pose - z
+1.00320306898
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0746875085782
+d
+3.81940628889
+pt[E]
+6.4184918849
+pt[N]
+12.5462297123
+Target[E]
+6.81509388003
+Target[N]
+13.5377347001
+Target_Heading_Error
+0.117260835689
+
+Thu Jan 22 13:33:42 2015
+Heading Err
+0.162668787312
+Linear Vel
+0.4
+Angular Vel
+0.0164007582502
+dist
+0.742369277925
+pose - x
+6.76563659385
+pose - y
+13.2955953303
+pose - z
+1.08693690319
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0440083668906
+d
+4.64410110646
+pt[E]
+6.72477585099
+pt[N]
+13.3119396275
+Target[E]
+7.0
+Target[N]
+14.0
+Target_Heading_Error
+0.162668787312
+
+Thu Jan 22 13:33:44 2015
+Heading Err
+0.175867210281
+Linear Vel
+0.175696610752
+Angular Vel
+0.0168060791863
+dist
+0.181333744397
+pose - x
+6.98801814333
+pose - y
+13.8190625468
+pose - z
+1.32880467384
+ab length
+5.38516480713
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0560736084888
+d
+5.21271864948
+pt[E]
+6.93595510488
+pt[N]
+13.8398877622
+Target[E]
+7.0
+Target[N]
+14.0
+Target_Heading_Error
+0.175867210281
+
+Thu Jan 22 13:33:51 2015
+Heading Err
+-0.459847638583
+Linear Vel
+0.0
+Angular Vel
+-0.3
+dist
+7.03269061946
+pose - x
+7.0404327471
+pose - y
+14.0138762537
+pose - z
+1.24791594629
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.0187782765376
+d
+0.0384022627743
+pt[E]
+7.02715450042
+pt[N]
+14.0271545004
+Target[E]
+8.02395510603
+Target[N]
+15.023955106
+Target_Heading_Error
+-0.449197705339
+
+Thu Jan 22 13:33:53 2015
+Heading Err
+-0.198810689105
+Linear Vel
+0.0
+Angular Vel
+-0.158962143332
+dist
+7.03391886193
+pose - x
+7.0385541299
+pose - y
+14.0140126921
+pose - z
+0.986675960101
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0173534170666
+d
+0.0371703563215
+pt[E]
+7.02628341101
+pt[N]
+14.026283411
+Target[E]
+8.03895090629
+Target[N]
+15.0389509063
+Target_Heading_Error
+-0.18916116569
+
+Thu Jan 22 13:33:55 2015
+Heading Err
+-0.0106830337798
+Linear Vel
+0.112465686741
+Angular Vel
+-0.00109315067704
+dist
+7.00027948645
+pose - x
+7.06199512922
+pose - y
+14.0381434135
+pose - z
+0.798490490442
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0168657099006
+d
+0.0708086426441
+pt[E]
+7.05006927138
+pt[N]
+14.0500692714
+Target[E]
+8.06853015004
+Target[N]
+15.06853015
+Target_Heading_Error
+-0.00138317546415
+
+Thu Jan 22 13:33:57 2015
+Heading Err
+-0.150774931186
+Linear Vel
+0.24228254703
+Angular Vel
+-0.0150540874059
+dist
+6.6725918689
+pose - x
+7.2761332223
+pose - y
+14.2874035909
+pose - z
+0.9349787527
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00796935404431
+d
+0.398480702036
+pt[E]
+7.28176840658
+pt[N]
+14.2817684066
+Target[E]
+8.46502032575
+Target[N]
+15.4650203258
+Target_Heading_Error
+-0.154343008524
+
+Thu Jan 22 13:33:59 2015
+Heading Err
+-0.251120896699
+Linear Vel
+0.4
+Angular Vel
+-0.0346060334574
+dist
+5.99425672805
+pose - x
+7.67181940005
+pose - y
+14.8529569069
+pose - z
+1.01514972042
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.128083559427
+d
+1.07817966644
+pt[E]
+7.76238815348
+pt[N]
+14.7623881535
+Target[E]
+8.43735128413
+Target[N]
+15.4373512841
+Target_Heading_Error
+-0.363138077199
+
+Thu Jan 22 13:34:01 2015
+Heading Err
+0.0978110861804
+Linear Vel
+0.0
+Angular Vel
+-0.0260331569482
+dist
+5.88775630961
+pose - x
+7.7303622645
+pose - y
+14.9458825906
+pose - z
+0.661700661807
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.152395884087
+d
+1.18528410399
+pt[E]
+7.83812242756
+pt[N]
+14.8381224276
+Target[E]
+8.48800801704
+Target[N]
+15.488008017
+Target_Heading_Error
+-0.0406214904757
+
+Thu Jan 22 13:34:03 2015
+Heading Err
+0.237084879237
+Linear Vel
+0.19171243552
+Angular Vel
+0.0136585574736
+dist
+5.65505207672
+pose - x
+7.92620298483
+pose - y
+15.0777822766
+pose - z
+0.529358699489
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.107182745108
+d
+1.41703156777
+pt[E]
+8.00199263072
+pt[N]
+15.0019926307
+Target[E]
+8.70289253574
+Target[N]
+15.7028925357
+Target_Heading_Error
+0.148326065586
+
+Thu Jan 22 13:34:05 2015
+Heading Err
+0.214036469771
+Linear Vel
+0.4
+Angular Vel
+0.0237816439906
+dist
+5.08606047844
+pose - x
+8.43529660886
+pose - y
+15.3722043989
+pose - z
+0.580133414258
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0446129295185
+d
+1.98520300076
+pt[E]
+8.40375050387
+pt[N]
+15.4037505039
+Target[E]
+9.24179673544
+Target[N]
+16.2417967354
+Target_Heading_Error
+0.242889425048
+
+Thu Jan 22 13:34:07 2015
+Heading Err
+0.0775382909609
+Linear Vel
+0.0
+Angular Vel
+0.151200803152
+dist
+4.78037035249
+pose - x
+8.70452062495
+pose - y
+15.5370884511
+pose - z
+0.732628775943
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.118392425523
+d
+2.29216375962
+pt[E]
+8.62080453802
+pt[N]
+15.620804538
+Target[E]
+9.30717806528
+Target[N]
+16.3071780653
+Target_Heading_Error
+0.17413861245
+
+Thu Jan 22 13:34:10 2015
+Heading Err
+-0.107265287687
+Linear Vel
+0.140546004551
+Angular Vel
+-0.00225847299962
+dist
+4.67858329892
+pose - x
+8.76803086661
+pose - y
+15.6171731931
+pose - z
+0.915465594714
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.106672483964
+d
+2.39370074629
+pt[E]
+8.69260202984
+pt[N]
+15.6926020298
+Target[E]
+9.3942022627
+Target[N]
+16.3942022627
+Target_Heading_Error
+-0.0229690845642
+
+Thu Jan 22 13:34:12 2015
+Heading Err
+-0.205316040404
+Linear Vel
+0.305877829258
+Angular Vel
+-0.0158143463856
+dist
+4.25054552281
+pose - x
+9.02944753136
+pose - y
+15.9597771015
+pose - z
+1.002304607
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0492644333901
+d
+2.82080778958
+pt[E]
+8.99461231644
+pt[N]
+15.9946123164
+Target[E]
+9.81609480826
+Target[N]
+16.8160948083
+Target_Heading_Error
+-0.174526529938
+
+Thu Jan 22 13:34:14 2015
+Heading Err
+-0.210878076649
+Linear Vel
+0.0
+Angular Vel
+-0.214725644888
+dist
+3.72270934975
+pose - x
+9.29951735087
+pose - y
+16.4375873938
+pose - z
+0.970047638965
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0976302636261
+d
+3.34963888814
+pt[E]
+9.36855237233
+pt[N]
+16.3685523723
+Target[E]
+10.0832179218
+Target[N]
+17.0832179218
+Target_Heading_Error
+-0.280948354534
+
+Thu Jan 22 13:34:16 2015
+Heading Err
+-0.0652015893057
+Linear Vel
+0.0
+Angular Vel
+-0.127129303407
+dist
+3.70039696732
+pose - x
+9.31372971341
+pose - y
+16.4550265889
+pose - z
+0.823596130304
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0999119788373
+d
+3.3720199192
+pt[E]
+9.38437815116
+pt[N]
+16.3843781512
+Target[E]
+10.0956233539
+Target[N]
+17.0956233539
+Target_Heading_Error
+-0.137203838122
+
+Thu Jan 22 13:34:18 2015
+Heading Err
+0.0585418969025
+Linear Vel
+0.149682099105
+Angular Vel
+7.62723412056e-05
+dist
+3.56891395279
+pose - x
+9.4149386437
+pose - y
+16.5393893875
+pose - z
+0.702196416034
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0879999648343
+d
+3.50323894705
+pt[E]
+9.47716401557
+pt[N]
+16.4771640156
+Target[E]
+10.2073282334
+Target[N]
+17.2073282334
+Target_Heading_Error
+-0.00181390179868
+
+Thu Jan 22 13:34:20 2015
+Heading Err
+0.0105730819777
+Linear Vel
+0.320809668416
+Angular Vel
+-0.0052334818485
+dist
+3.13474751632
+pose - x
+9.72457842845
+pose - y
+16.8438231374
+pose - z
+0.747923740008
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.084318742321
+d
+3.93745450758
+pt[E]
+9.78420078293
+pt[N]
+16.7842007829
+Target[E]
+10.5208055716
+Target[N]
+17.5208055716
+Target_Heading_Error
+-0.0432916224509
+
+Thu Jan 22 13:34:22 2015
+Heading Err
+0.134514426236
+Linear Vel
+0.4
+Angular Vel
+0.0110849891793
+dist
+2.37630482434
+pose - x
+10.2931644568
+pose - y
+17.3466588233
+pose - z
+0.634964976839
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0378262293337
+d
+4.69506406722
+pt[E]
+10.31991164
+pt[N]
+17.31991164
+Target[E]
+11.1862121517
+Target[N]
+18.1862121517
+Target_Heading_Error
+0.119567812926
+
+Thu Jan 22 13:34:24 2015
+Heading Err
+0.298594816995
+Linear Vel
+0.0
+Angular Vel
+0.257602885171
+dist
+1.65032519509
+pose - x
+10.9256766283
+pose - y
+17.7472420256
+pose - z
+0.563331025043
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.12617231759
+d
+5.42557281163
+pt[E]
+10.8364593269
+pt[N]
+17.8364593269
+Target[E]
+11.5135985029
+Target[N]
+18.5135985029
+Target_Heading_Error
+0.353068790716
+
+Thu Jan 22 13:34:26 2015
+Heading Err
+0.0382987330616
+Linear Vel
+0.0
+Angular Vel
+0.0831398981806
+dist
+1.64451495096
+pose - x
+10.9297112203
+pose - y
+17.7514362843
+pose - z
+0.823829165083
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.126059416163
+d
+5.43139148785
+pt[E]
+10.8405737523
+pt[N]
+17.8405737523
+Target[E]
+11.5178425589
+Target[N]
+18.5178425589
+Target_Heading_Error
+0.0924299958943
+
+Thu Jan 22 13:34:28 2015
+Heading Err
+-0.109745422806
+Linear Vel
+0.119203123579
+Angular Vel
+-0.00701670560704
+dist
+1.5849316594
+pose - x
+10.9640901195
+pose - y
+17.8004588025
+pose - z
+0.968211616727
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.115704813915
+d
+5.49036519562
+pt[E]
+10.882274461
+pt[N]
+17.882274461
+Target[E]
+11.5719901937
+Target[N]
+18.5719901937
+Target_Heading_Error
+-0.0647429020812
+
+Thu Jan 22 13:34:30 2015
+Heading Err
+-0.133265383697
+Linear Vel
+0.284680441667
+Angular Vel
+-0.0137675084061
+dist
+1.17227957538
+pose - x
+11.2056759774
+pose - y
+18.1378580453
+pose - z
+0.959582032054
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0479545196708
+d
+5.89976948655
+pt[E]
+11.1717670114
+pt[N]
+18.1717670114
+Target[E]
+11.9977201329
+Target[N]
+18.9977201329
+Target_Heading_Error
+-0.133152563516
+
+Thu Jan 22 13:34:32 2015
+Heading Err
+-0.078154403098
+Linear Vel
+0.287977016954
+Angular Vel
+-0.00758375664024
+dist
+0.45894525436
+pose - x
+11.6742890807
+pose - y
+18.6766686784
+pose - z
+0.859886261225
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00168262963515
+d
+6.61212564203
+pt[E]
+11.6754788795
+pt[N]
+18.6754788795
+Target[E]
+12.0
+Target[N]
+19.0
+Target_Heading_Error
+-0.078154403098
+
+Thu Jan 22 13:34:34 2015
+Heading Err
+-0.857723008099
+Linear Vel
+0.131515951321
+Angular Vel
+0.0
+dist
+0.0751495140792
+pose - x
+11.9254227834
+pose - y
+18.9907432061
+pose - z
+0.981215009454
+ab length
+7.07106781187
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0461885138612
+d
+7.01178821459
+pt[E]
+11.9580829948
+pt[N]
+18.9580829948
+Target[E]
+12.0
+Target[N]
+19.0
+Target_Heading_Error
+-0.857723008099
+
+Thu Jan 22 13:34:40 2015
+Heading Err
+1.54358850258
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+8.54377440328
+pose - x
+11.9594328846
+pose - y
+19.0439557126
+pose - z
+0.97918132745
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ Arrived 
+ 
+
+ab_dist_to_pose
+0.0121890777275
+d
+0.0585595586125
+pt[E]
+11.9523481271
+pt[N]
+19.0340370521
+Target[E]
+10.701631194
+Target[N]
+19.92740629
+Target_Heading_Error
+1.5500920539
+
+Thu Jan 22 13:34:42 2015
+Heading Err
+1.17589940305
+Linear Vel
+0.0
+Angular Vel
+0.3
+dist
+8.54671195792
+pose - x
+11.9554320153
+pose - y
+19.0332857166
+pose - z
+1.34558195651
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00118108679951
+d
+0.0556133907355
+pt[E]
+11.9547455225
+pt[N]
+19.0323246268
+Target[E]
+9.95991545134
+Target[N]
+20.457203249
+Target_Heading_Error
+1.17624300141
+
+Thu Jan 22 13:34:44 2015
+Heading Err
+0.370361302716
+Linear Vel
+0.0
+Angular Vel
+0.283169801703
+dist
+8.53986971271
+pose - x
+11.9523589575
+pose - y
+19.0407581591
+pose - z
+2.15162303219
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00547548480071
+d
+0.0624573096861
+pt[E]
+11.9491763966
+pt[N]
+19.0363025739
+Target[E]
+10.4813440511
+Target[N]
+20.0847542492
+Target_Heading_Error
+0.372755612586
+
+Thu Jan 22 13:34:46 2015
+Heading Err
+0.00968046682284
+Linear Vel
+0.104032408913
+Angular Vel
+0.00126425953651
+dist
+8.51336772905
+pose - x
+11.9318279954
+pose - y
+19.0576128509
+pose - z
+2.51251516405
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00725733236163
+d
+0.0889606312951
+pt[E]
+11.9276097567
+pt[N]
+19.0517073166
+Target[E]
+10.5402014904
+Target[N]
+20.0427132211
+Target_Heading_Error
+0.0130845001741
+
+Thu Jan 22 13:34:48 2015
+Heading Err
+0.0480490215973
+Linear Vel
+0.236938213445
+Angular Vel
+0.00540327316041
+dist
+8.17792111252
+pose - x
+11.6620980775
+pose - y
+19.257127144
+pose - z
+2.4748631836
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.012831460388
+d
+0.424414221051
+pt[E]
+11.6546399427
+pt[N]
+19.2466857552
+Target[E]
+10.4167079491
+Target[N]
+20.1309228935
+Target_Heading_Error
+0.0549143255213
+
+Thu Jan 22 13:34:50 2015
+Heading Err
+0.123783834261
+Linear Vel
+0.4
+Angular Vel
+0.0216329655014
+dist
+7.51192803979
+pose - x
+11.1715078422
+pose - y
+19.7172959676
+pose - z
+2.41115632188
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.102136452255
+d
+1.09109161203
+pt[E]
+11.1121422351
+pt[N]
+19.6341841178
+Target[E]
+10.297388211
+Target[N]
+20.2161512778
+Target_Heading_Error
+0.211843731035
+
+Thu Jan 22 13:34:52 2015
+Heading Err
+-0.112275832011
+Linear Vel
+0.4
+Angular Vel
+-0.00551869701812
+dist
+6.6966467158
+pose - x
+10.4898700049
+pose - y
+20.1651069682
+pose - z
+2.64412315245
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.070341306988
+d
+1.90604799256
+pt[E]
+10.4489849507
+pt[N]
+20.1078678923
+Target[E]
+9.56933804566
+Target[N]
+20.7361871102
+Target_Heading_Error
+-0.0578010785292
+
+Thu Jan 22 13:34:54 2015
+Heading Err
+-0.0520873874809
+Linear Vel
+0.4
+Angular Vel
+-0.00507928873494
+dist
+5.86877417989
+pose - x
+9.77215323361
+pose - y
+20.5839988452
+pose - z
+2.57241556413
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00595675168278
+d
+2.73355411018
+pt[E]
+9.77561552519
+pt[N]
+20.5888460534
+Target[E]
+8.33230834852
+Target[N]
+21.6197797511
+Target_Heading_Error
+-0.054430787643
+
+Thu Jan 22 13:34:56 2015
+Heading Err
+-0.0356913299369
+Linear Vel
+0.4
+Angular Vel
+-0.00354774637754
+dist
+5.06953996724
+pose - x
+9.11775342425
+pose - y
+21.042916603
+pose - z
+2.55449340137
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0128821747555
+d
+3.53280166723
+pt[E]
+9.12524103624
+pt[N]
+21.0533992598
+Target[E]
+7.88828555493
+Target[N]
+21.9369388893
+Target_Heading_Error
+-0.0416245935924
+
+Thu Jan 22 13:34:59 2015
+Heading Err
+-0.0161717702321
+Linear Vel
+0.4
+Angular Vel
+-0.00134607239348
+dist
+4.2636528626
+pose - x
+8.46508931016
+pose - y
+21.5156707534
+pose - z
+2.5357465918
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00753960972975
+d
+4.33867907076
+pt[E]
+8.4694716193
+pt[N]
+21.5218059862
+Target[E]
+7.092612024
+Target[N]
+22.5052771257
+Target_Heading_Error
+-0.0188593557997
+
+Thu Jan 22 13:35:01 2015
+Heading Err
+-0.158080161648
+Linear Vel
+0.4
+Angular Vel
+-0.0237349432812
+dist
+3.48236518039
+pose - x
+7.77246688222
+pose - y
+21.8927993364
+pose - z
+2.649773597
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.103236067733
+d
+5.12149065967
+pt[E]
+7.83247162776
+pt[N]
+21.9768059802
+Target[E]
+7.01953397537
+Target[N]
+22.5574757319
+Target_Heading_Error
+-0.231402067503
+
+Thu Jan 22 13:35:03 2015
+Heading Err
+-0.0698620347091
+Linear Vel
+0.4
+Angular Vel
+-0.0188312362481
+dist
+2.70992952151
+pose - x
+7.11083507666
+pose - y
+22.3005608894
+pose - z
+2.53361005283
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.155992519394
+d
+5.89688919398
+pt[E]
+7.20150388686
+pt[N]
+22.4274972237
+Target[E]
+6.45749185425
+Target[N]
+22.9589343898
+Target_Heading_Error
+-0.18125042522
+
+Thu Jan 22 13:35:05 2015
+Heading Err
+0.0922846147269
+Linear Vel
+0.4
+Angular Vel
+0.0046683417834
+dist
+1.90719653851
+pose - x
+6.49872207637
+pose - y
+22.8204955387
+pose - z
+2.38254014773
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0886877470576
+d
+6.69719190688
+pt[E]
+6.55027078228
+pt[N]
+22.8926637269
+Target[E]
+5.71134856093
+Target[N]
+23.4918938851
+Target_Heading_Error
+0.0529893996163
+
+Thu Jan 22 13:35:07 2015
+Heading Err
+-0.0102133978069
+Linear Vel
+0.4
+Angular Vel
+-0.000977310411704
+dist
+1.11591341062
+pose - x
+5.90410466239
+pose - y
+23.345891829
+pose - z
+2.52549015101
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00676955166912
+d
+7.48643238994
+pt[E]
+5.90803938438
+pt[N]
+23.3514004397
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.0102133978069
+
+Thu Jan 22 13:35:09 2015
+Heading Err
+-0.0443035434921
+Linear Vel
+0.262858834302
+Angular Vel
+-0.00383030626368
+dist
+0.396012706222
+pose - x
+5.32305528647
+pose - y
+23.7709555821
+pose - z
+2.56915913577
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.00139096193826
+d
+8.20631500365
+pt[E]
+5.32224680627
+pt[N]
+23.7698237098
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.0443035434921
+
+Thu Jan 22 13:35:11 2015
+Heading Err
+-0.602448789522
+Linear Vel
+0.122166869305
+Angular Vel
+0.0
+dist
+0.048466186601
+pose - x
+5.02074688682
+pose - y
+23.9561988821
+pose - z
+2.61560048467
+ab length
+8.60232526704
+Error
+ N/A 
+Status
+ 
+ab_dist_to_pose
+0.0235835527105
+d
+8.55998394815
+pt[E]
+5.03445454839
+pt[N]
+23.9753896083
+Target[E]
+5.0
+Target[N]
+24.0
+Target_Heading_Error
+-0.602448789522
+
