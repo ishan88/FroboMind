@@ -28,11 +28,11 @@
 #****************************************************************************/
 """
 
-2014-09-10 KJ First version
+2014-09-17 KJ First version
 """
-
+from navigation_globals import *
 import rospy
-from msgs.msg import StringArrayStamped, RoutePt
+from msgs.msg import StringArrayStamped, RoutePt, waypoint_navigation_status
 from socket import *
 
 class socketd():
@@ -48,7 +48,6 @@ class socketd():
 			self.socket_password_received = False
 		self.socket_timeout = 0.0
 		self.socket_packets = []
-		self.send_status_interval = 1.0
 		self.debug = debug
 		self.tcpSerSock = socket(AF_INET, SOCK_STREAM)
 		self.msg_text = ""
@@ -76,9 +75,10 @@ class socketd():
 
 	def send_str(self, s):
 		self.tcpCliSock.send('%s\r\n' % s)
-
+	'''
 	def send_status(self, x, y):
 		self.tcpCliSock.send('$S,%.9f,%.9f\r\n' % (x,y))
+	'''
 
 	def packets_available(self):
 		if len(self.socket_packets) > 0:
@@ -107,7 +107,7 @@ class socketd():
 					close_socket_now = True
 				else:
 					if d[0]=='$' and d[1]=='P' and d[2]=='F' and d[3]=='M' and d[-1]=='\n':
-						self.socket_packets.append (d)
+						self.socket_packets.append (d.rstrip())
 						self.socket_timeout = time_now + self.max_idle
 			except:
 				if rospy.get_time() > self.socket_timeout:
@@ -132,7 +132,7 @@ class socketd():
 				if self.debug:
 					self.msg_type = self.MSG_TYPE_INFO
 					self.msg_text = "Connection established from %s port %d" % (addr[0],addr[1])
-				outdata = "$PFMRH,1.0,FroboMind Route Plan Socket Interface\r\n"
+				outdata = "$PFMRH,1.0,FroboMind Route Plan Server\r\n"
 				self.tcpCliSock.send(outdata)
 
 		if close_socket_now:
@@ -141,19 +141,23 @@ class socketd():
 class ROSnode():
 	def __init__(self):
 		rospy.loginfo(rospy.get_name() + ": Start")
-		# defines
-		self.ROUTEPT_CMD_DELETE = 0
-		self.ROUTEPT_CMD_DELETE_THEN_APPEND = 1
-		self.ROUTEPT_CMD_APPEND = 2
-		self.ROUTEPT_MODE_PP = 0
-		self.ROUTEPT_MODE_MCTE = 1
-		self.ROUTEPT_INVALID_DATA = -1000000
-		self.count = 0
 
 		# static parameters
 		self.update_rate = 50 # set update frequency [Hz]
 		self.deadman_tout_duration = 0.2 # [s]
 		self.cmd_vel_tout_duration = 0.2 # [s]
+
+		# variables
+		self.send_status_interval = 0.0
+		self.send_status_timeout = 0.0
+		self.pose_e = 0.0
+		self.pose_n = 0.0
+		self.pose_orientation = 0.0
+		self.status_linear_vel = 0.0
+		self.status_angular_vel = 0.0
+		self.status_mode = 0
+		self.status_task = 0
+		self.status_b_id = ""
 
 		# get parameters
 		socket_addr = rospy.get_param("~socket_address",'localhost')
@@ -163,6 +167,7 @@ class ROSnode():
 		self.debug = rospy.get_param("~debug",'false')
 
 		# get topic names
+		topic_status_sub =  rospy.get_param("~status_sub",'/fmInformation/wptnav_status')
 		topic_hmi_pub = rospy.get_param("~hmi_pub",'/fmDecision/hmi')
 		topic_routept = rospy.get_param("~routept_pub",'/fmPlan/route_point')
 
@@ -176,6 +181,7 @@ class ROSnode():
 		self.routept_msg = RoutePt()
 
 		# setup subscription topic callbacks
+		rospy.Subscriber(topic_status_sub, waypoint_navigation_status, self.on_status_message)
 
 		# setup socket
 		self.sd = socketd(socket_addr, socket_port, socket_timeout, self.socket_password, self.debug)
@@ -187,9 +193,28 @@ class ROSnode():
 			(msg_type, msg_text) = self.sd.message()
 			rospy.logerr(rospy.get_name() + ": %s", msg_text)
 
+	def on_status_message(self, msg):
+		self.pose_e = msg.easting
+		self.pose_n = msg.northing
+		self.pose_orientation = msg.orientation
+		self.status_linear_vel = msg.linear_speed
+		self.status_angular_vel = msg.angular_speed
+		self.status_b_id = msg.b_id
+		if msg.state == 1 or msg.state == 2: # automode = True
+			self.status_mode = 1
+		else:
+			self.status_mode = 0
+		self.status_task = msg.task
+
 	def publish_routept_message(self):
 		self.routept_msg.header.stamp = rospy.Time.now()
 		self.routept_pub.publish(self.routept_msg)
+
+	def publish_hmi_message(self, id_str, value_str):
+		self.hmi_msg.header.stamp = rospy.Time.now()
+		self.hmi_msg.data[0] = id_str
+		self.hmi_msg.data[1] = value_str
+		self.hmi_pub.publish (self.hmi_msg)
 
 	def socket_updater(self):
 		self.sd.update(rospy.get_time())
@@ -213,9 +238,55 @@ class ROSnode():
 					self.sd.close_socket()
 				elif p[4]=='R' and p[5]=='K': # keep socket alive
 					pass
+				elif p[4]=='H' and p[5]=='M': # mode select
+					if self.sd.socket_password_received:
+						data = p.split (',') # split into comma separated list
+						if len(data) > 1 and data[1] != '':
+							value = data[1]
+							if value == '0' or value == '1':
+								if value == '0':
+									self.publish_hmi_message (str(HMI_ID_MODE), str(HMI_MODE_MANUAL))
+								elif value == '1':
+									self.publish_hmi_message (str(HMI_ID_MODE), str(HMI_MODE_AUTO))
+								self.sd.send_str('$PFMHM,ok')
+								if self.debug:
+									if value == '0':
+										rospy.loginfo(rospy.get_name() + ": Switching to manual mode")
+									else:
+										rospy.loginfo(rospy.get_name() + ": Switching to autonomous mode")
+							else:
+								self.sd.send_str('$PFMHM,err')
+						else:
+							self.sd.send_str('$PFMHM,err')
+					else:
+						self.sd.send_str('$PFMHM,passwd')			
+
+				elif p[4]=='R' and p[5]=='S': # subscribe to status
+					if self.sd.socket_password_received:
+						message_ok = False
+						data = p.split (',') # split into comma separated list
+						if len(data) > 1 and data[1] != '':
+							value = data[1].rstrip()
+							if value != '':
+								time = float(value)
+								if time >= 0.0:
+									message_ok = True
+									self.send_status_interval = time
+									self.send_status_timeout = 0.0
+						if message_ok == True:
+							self.sd.send_str('$PFMRS,ok')
+							if self.debug:
+								rospy.loginfo(rospy.get_name() + ": Subscribing to status")
+						else:
+							self.sd.send_str('$PFMRS,err')
+							if self.debug:
+								rospy.loginfo(rospy.get_name() + ": Error subscribing to status")
+					else:
+						self.sd.send_str('$PFMRS,passwd')			
+
 				elif p[4]=='R' and p[5]=='D': # delete route plan
 					if self.sd.socket_password_received:
-						self.routept_msg.cmd = self.ROUTEPT_CMD_DELETE
+						self.routept_msg.cmd = ROUTEPT_CMD_DELETE
 						self.publish_routept_message()
 						self.sd.send_str('$PFMRD,ok')
 						if self.debug:
@@ -226,56 +297,63 @@ class ROSnode():
 					pass
 				elif p[4]=='R' and p[5]=='E': # wpt using ENU coordinates
 					if self.sd.socket_password_received:
+						self.sd.send_str('$PFMRE,ok')
 						data = p.split (',') # split into comma separated list
-						self.routept_msg.cmd = self.ROUTEPT_CMD_APPEND
+						self.routept_msg.cmd = ROUTEPT_CMD_APPEND
 						self.routept_msg.easting = float(data[1])
 						self.routept_msg.northing = float(data[2])
 						if len(data) > 3 and data[3] != '':
 							self.routept_msg.heading = float(data[3])
 						else:
-							self.routept_msg.heading = self.ROUTEPT_INVALID_DATA
+							self.routept_msg.heading = ROUTEPT_INVALID_DATA
 						if len(data) > 4 and data[4] != '':
 							self.routept_msg.id = data[4]
 						else:
 							self.routept_msg.id = ''
 						if len(data) > 5 and data[5] != '':
 							if data[5]=='PP':
-								self.routept_msg.nav_mode = self.ROUTEPT_MODE_PP
+								self.routept_msg.nav_mode = ROUTEPT_NAV_MODE_PP
 							else:
-								self.routept_msg.nav_mode = self.ROUTEPT_MODE_MCTE
+								self.routept_msg.nav_mode = ROUTEPT_NAV_MODE_AB
 						else:
-							self.routept_msg.nav_mode = self.ROUTEPT_MODE_MCTE
+							self.routept_msg.nav_mode = ROUTEPT_INVALID_DATA
 						if len(data) > 6 and data[6] != '':
 							self.routept_msg.linear_vel = float(data[6])
 						else:
-							self.routept_msg.linear_vel = self.ROUTEPT_INVALID_DATA
+							self.routept_msg.linear_vel = ROUTEPT_INVALID_DATA
 						if len(data) > 7 and data[7] != '':
 							self.routept_msg.angular_vel = float(data[7])
 						else:
-							self.routept_msg.angular_vel = self.ROUTEPT_INVALID_DATA
+							self.routept_msg.angular_vel = ROUTEPT_INVALID_DATA
 						if len(data) > 8 and data[8] != '':
 							self.routept_msg.pause = float(data[8])
 						else:
-							self.routept_msg.pause = self.ROUTEPT_INVALID_DATA
+							self.routept_msg.pause = ROUTEPT_INVALID_DATA
 						if len(data) > 9 and data[9] != '':
 							self.routept_msg.task = int(data[9])
 						else:
-							self.routept_msg.task = self.ROUTEPT_INVALID_DATA
+							self.routept_msg.task = ROUTEPT_INVALID_DATA
 						
 						self.publish_routept_message()
-						self.sd.send_str('$PFMRE,ok')
 						if self.debug:
-							rospy.loginfo(rospy.get_name() + ": RoutePt (ENU) E%.3f N%.3f received" % (self.routept_msg.easting, self.routept_msg.northing))
+							rospy.loginfo(rospy.get_name() + ": RoutePt (ENU) %s E%.3f N%.3f received" % (self.routept_msg.id, self.routept_msg.easting, self.routept_msg.northing))
 					else:
 						self.sd.send_str('$PFMRE,passwd')				
 				else:
 					rospy.logwarn(rospy.get_name() + ": Unknown packet: %s" % p)	
 
+			# is it time to send a status?
+			if self.sd.socket_open and self.send_status_interval > 0 and self.send_status_timeout < rospy.get_time():
+				self.send_status_timeout = rospy.get_time() + self.send_status_interval
+				self.sd.send_str('$PFMRS,%.3f,%.3f,%.3f,%.3f,%.3f,%ld,%ld,%s,,,,,,' % (self.pose_e, self.pose_n, self.pose_orientation, self.status_linear_vel, self.status_angular_vel, self.status_mode, self.status_task, self.status_b_id))
+			elif self.sd.socket_open == False:
+				self.send_status_interval = 0.0
+
 			self.r.sleep()
 
 # Main function.    
 if __name__ == '__main__':
-    rospy.init_node('route_plan_socketd')
+    rospy.init_node('route_plan_server')
     try:
         node_class = ROSnode()
     except rospy.ROSInterruptException:

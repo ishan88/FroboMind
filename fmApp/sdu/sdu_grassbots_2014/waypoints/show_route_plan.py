@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 #/****************************************************************************
-# Waypoint Navigation: Waypoint list
-# Copyright (c) 2013-2014, Kjeld Jensen <kjeld@frobomind.org>
+# Show route plan!
+# Copyright (c) 2014, Kjeld Jensen <kjeld@frobomind.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
-#    * Redistributions of source code must retain the above copyright
-#      notice, this list of conditions and the following disclaimer.
-#    * Redistributions in binary form must reproduce the above copyright
-#      notice, this list of conditions and the following disclaimer in the
-#      documentation and/or other materials provided with the distribution.
-#    * Neither the name of the copyright holder nor the names of its
-#      contributors may be used to endorse or promote products derived from
-#      this software without specific prior written permission.
+#	* Redistributions of source code must retain the above copyright
+#	  notice, this list of conditions and the following disclaimer.
+#	* Redistributions in binary form must reproduce the above copyright
+#	  notice, this list of conditions and the following disclaimer in the
+#	  documentation and/or other materials provided with the distribution.
+#   * Neither the name of the copyright holder nor the names of its
+#     contributors may be used to endorse or promote products derived from
+#     this software without specific prior written permission.
 #
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 # ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -27,29 +27,59 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #****************************************************************************/
 """
-Supported waypoint list format:
-	easting, northing, yaw, wptid, mode, tolerance, lin_spd, ang_spd, task, wait
-Reference: https://docs.google.com/document/d/1nXmZ2Yz4_EzWaQ4GabGi4fah6phSRXDoe_4mvrjz-kA/edit#
-
-2013-06-07 KJ First version
-2013-11-14 KJ Changed the waypoint list format to:
-			  [easting, northing, yaw, wptid, modestr, tolerance, lin_spd, ang_spd, wait, implement]
-              Added support for flexible waypoint csv length
-2014-09-10 KJ Changed from static CSV file load to dynamic ROS topic management
+2014-09-19 KJ First version
 """
 
-#imports
-from navigation_globals import *
-from transverse_mercator_py.transverse_mercator import tranmerc
+# imports
+from pylab import *
+from math import pi, sqrt
+
+#*****************************************************************************
+# USER CONFIGURABLE PARAMETERS BEGIN HERE
+
+file_name = 'waypoints.txt'
+plot_from = 0
+plot_to = 10000000
+
+list_nearby_waypoints = False
+nearby_threshold = 2.0
+
+plot_waypoint_positions = False
+plot_robot_position = False
+e_robot = 545981.07281
+n_robot = 6256815.483139
+
+
+# USER CONFIGURABLE PARAMETERS END HERE
+#*****************************************************************************
+
+# options
+simdir_version = '2014-09-19'
+show_plot = True
+save_file = True
+
+# csv file waypoint list structure
+CSV_E = 0 
+CSV_N = 1
+CSV_HEADING = 2
+CSV_ID = 3
+CSV_NAV_MODE = 4
+CSV_LIN_VEL = 5
+CSV_ANG_VEL = 6
+CSV_PAUSE = 7
+CSV_TASK = 8
+ROUTEPT_INVALID_DATA = -1000000
+ROUTEPT_NAV_MODE_PP = 0 # pure pursuit
+ROUTEPT_NAV_MODE_AB = 1 # AB line navigation
 
 class waypoint_list():
-	def __init__(self, wpt_def_nav_mode, wpt_def_lin_vel, wpt_def_ang_vel, wpt_def_pause, wpt_def_task):
-		self.wpt_def_nav_mode = wpt_def_nav_mode
-		self.wpt_def_lin_vel = wpt_def_lin_vel
-		self.wpt_def_ang_vel = wpt_def_ang_vel
-		self.wpt_def_pause = wpt_def_pause
-		self.wpt_def_task = wpt_def_task
-		self.delete_list()
+	def __init__(self):
+		self.list = []
+		self.wpt_def_nav_mode = "PP"
+		self.wpt_def_lin_vel = 1.0
+		self.wpt_def_ang_vel = 1.0
+		self.wpt_def_pause = 0.0
+		self.wpt_def_task = 0
 
 	def append(self, e, n, heading, name, nav_mode, lin_vel, ang_vel, pause, task):
 		if nav_mode == ROUTEPT_INVALID_DATA:
@@ -63,10 +93,6 @@ class waypoint_list():
 		if task == ROUTEPT_INVALID_DATA:
 			task = self.wpt_def_task
 		self.list.append([e, n, heading, name, nav_mode, lin_vel, ang_vel, pause, task])
-	
-	def delete_list(self):
-		self.list = []
-		self.next = 0
 
 	def load_from_csv_ne_format(self, filename):
 		self.list = []
@@ -129,40 +155,61 @@ class waypoint_list():
 						print 'Erroneous waypoint'
 			self.next = 0
 
-	def get_first (self):	
-		if len(self.list) > 0:
-			wpt = self.list[0]
-			self.next = 1
-		else:
-			wpt = False
-		return wpt
 
-	def get_next (self):	
-		if self.next < len(self.list):
-			wpt = self.list[self.next]
-			self.next += 1
-		else:
-			wpt = False
-		return wpt
 
-	def get_previous (self):
-		prev_wpt = False
-		wpt = False
-		if self.next > 1:
-			self.next -= 1
-			wpt = self.list[self.next-1]
-			if self.next > 1:
-				prev_wpt = self.list[self.next-2]
-		return (wpt, prev_wpt)
+# find coordinate minimum and maximum
+def enu_min_max(w):
+	min_e = 100000000000000
+	min_n = 100000000000000
+	max_e = -100000000000000
+	max_n = -100000000000000
+	for i in xrange(len(w)):
+		if min_e > w[i][0]:
+			min_e = w[i][0]
+		elif max_e < w[i][0]:
+			max_e = w[i][0]
+		if min_n > w[i][1]:
+			min_n = w[i][1]
+		elif max_n < w[i][1]:
+			max_n = w[i][1]
+	return (min_e, max_e, min_n, max_n)
 
-	def get_number (self, wpt_num):	
-		if wpt_num < len(self.list):
-			wpt = self.list[wpt_num]
-			self.next = wpt_num + 1
-		else:
-			wpt = False
-		return wpt
 
-	def status (self):		
-		return (len(self.list), self.next)
+wl = waypoint_list()
+wl.load_from_csv_ne_format(file_name)
+print 'Number of waypoints', len(wl.list)
+
+
+if list_nearby_waypoints == True:
+	for i in xrange(len(wl.list)):
+		dist = sqrt((e_robot - wl.list[i][0])**2 + (e_robot - wl.list[i][0])**2)
+		if dist <= nearby_threshold:
+			print 'Nearby: %s %.1fm' % (wl.list[i][3], dist)
+
+
+# plot the route plan
+e_vals = []
+n_vals = []
+i = plot_from
+if plot_to > len(wl.list):
+	plot_to = len(wl.list)
+while i < plot_to:
+	e_vals.append (wl.list[i][0])
+	n_vals.append (wl.list[i][1])
+	i += 1
+plot(e_vals, n_vals,'r')
+if plot_waypoint_positions == True:
+	plot(e_vals, n_vals,'ro')
+if plot_robot_position == True:
+	plot(e_robot, n_robot,'go')
+(min_e, max_e, min_n, max_n) = enu_min_max(wl.list)
+border = 1.0
+title ('Route Plan')
+xlabel('Easting [m]')
+ylabel('Northing [m]')
+axis('equal')
+grid (True)
+xlim(min_e-border, max_e+border)
+ylim(min_n-border, max_n+border)
+show()
 
