@@ -1,0 +1,26 @@
+<launch>
+	<node pkg="serial_string" name="serial_string_node" type="serial_string_node" output="screen" >
+        <param name="publisher_topic" value="/fmData/rx" />	 
+        <param name="subscriber_topic" value="/fmData/tx" />
+		<param name="device" value="/dev/ttyUSB0" />	
+		<param name="baudrate" value="115200" />
+		<param name="termination_character" value="10"/>
+	</node>
+
+    <!--node pkg="topcon_gnss_setup" type="topcon_initializer_node.py" name="gps_initializer" output="screen">
+ 		<param name="serial_topic" value="/fmData/tx"/>
+ 		<param name="message_string2" value="set,/par/pos/pd/ionr,0" />
+ 		<param name="message_string3" value="%%em,/dev/ser/a,nmea/GGA/NP:0.5" />
+    </node-->
+    
+    <node pkg="gps_gpgga" name="nmea_to_gpgga" type="gps_gpgga_node" output="screen">
+        <param name="subscribe_topic_id" value="/fmData/rx" />
+        <param name="publish_topic_id" value="/fmInformation/gpgga" />
+    </node>
+        
+    <node pkg="gpgga_to_utm" name="gpgga_to_utm_converter" type="gpgga_to_utm_node" output="screen">
+    	<param name="subscribe_topic_id" value="/fmInformation/gpgga" />
+        <param name="publish_topic_id" value="/fmInformation/utm" />
+        <param name="frame_id" value=""/>
+    </node>
+</launch>

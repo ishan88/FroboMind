@@ -1,0 +1,7 @@
+# Kjelds FroboScout
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AH02ZQEK", MODE="0666", SYMLINK+="frobitTest"
+#
+# Copy this file to: /etc/udev/rules.d/
+#
+# Example on how to retrieve FTDI serial:
+#   udevadm info -a -n /dev/ttyUSB1 | grep 'serial'

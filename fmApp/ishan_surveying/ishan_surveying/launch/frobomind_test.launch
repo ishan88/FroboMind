@@ -1,0 +1,142 @@
+<launch>
+	
+		<!-- Global Parameters here -->
+		
+		<!-- Ros Nodes in different groups below -->
+		
+	<group ns="fmSensors">
+	
+	<!--Launches the local sensor node which publishes some data on the topic-->
+		
+		<node pkg="claas_eye_drive" name="ish_local_sensing" type="ish_local_sensing.py" output="screen" respawn="false"/> 
+		<param name = "localsensingdata" value = "/fmInformation/locSenDat"/>
+	
+	<!--Launches the global sensor node which publishes some data on the topic-->
+	
+		<node pkg="ishan_globalsensing" name="ish_global_sensing" type="ish_global_sensing.py" output="screen" respawn="false"/> 
+		<param name = "globalsensingdata" value = "/fmInformation/gloSenDat"/>
+		
+		<node pkg="ishan_platform_feedback" name="ish_platf_feedback" type="ish_platf_feedback.py"/>
+		<param name="platformfeedbackdata" value="/fmInformation/plaFeeDat"/>
+		
+		<node pkg="ishan_implement_feedback" name="ish_implement_feedback" type="ish_implement_feedback.py"
+		output="screen" respawn="false"/>
+		<param name="implementfeedbackdata" value="/fmInformation/impFeeDat"/>
+		
+	</group>
+		
+	<group ns="fmProcessors">
+	
+	<!-- Launches object detection node which detects the message sent by local sensor -->
+	
+		<node pkg="lidar_row_extractor" name="ish_object_detection" type="ish_object_detection.py"
+		output="screen" respawn="false"/>
+		<param name = "objectdetectiondata" value="/fmKnowledge/objDetDat"/>
+		
+	<!-- Launches localization mapping node which detects the message sent by global and local sensor -->
+	
+		<node pkg="ishan_localization_mapping" name="ish_localization_mapping" type="ish_localization_mapping.py" 
+		output="screen" respawn="false"/>
+		<param name="localizationmappingdata" value="/fmKnowledge/locMapDat"/>
+		
+		
+		<node pkg="ishan_implement_processing" name="ish_implement_processing" type="ish_implement_processing.py" 
+		output="screen" respawn="false"/>
+		<param name="implementprocessingdata" value="/fmKnowledge/impProDat"/>
+		
+		<node pkg="ishan_platform_processing" name="ish_platf_processing" type="ish_platf_processing.py" output="screen" respawn="false"/>
+		<param name="platformprocessingdata" value="/fmKnowledge/plaProDat"/>
+		
+	</group>
+		
+		
+		<group ns="fmDecisionMakers">
+		
+		<!-- brief description of each node -->
+			
+			<node pkg="ishan_monitors" name="ish_monitors" type="ish_monitors.py" 
+			output="screen" respawn="false"/>
+			<param name="monitorsdata" value="/fmDecisions/monDat"/>
+			
+			<node pkg="ishan_mission_planner" name="ish_mission_planner" type="ish_mission_planner.py" 
+			output="screen" respawn="false"/>
+			<param name="missionplannerdata" value="/fmDecisions/misPlaDat"/>
+			
+			<node pkg="ishan_hmi" name="ish_hmi" type="ish_hmi.py" 
+			output="screen" respawn="false"/>
+			<param name="hmidata" value="/fmDecisions/hmiDat"/>
+			
+			<node pkg="ishan_behaviour" name="ish_behaviour" type="ish_behaviour.py" 
+			output="screen" respawn="false"/>
+			<param name="behaviourdata" value="/fmPlans/behDat"/>
+			
+		</group>
+		
+		
+		<group ns="fmControllers">
+		
+		<!-- brief description of each node -->
+			
+	  		<node pkg="ish_platfControllers" name="ish_platf_controllers" type="ish_platf_controllers.py" 
+			output="screen" respawn="false"/>
+			<param name="platformcontrollersdata" value="/fmSignals/plaConDat"/>
+		
+			<node pkg="ishan_implementControllers" name="ish_imp_controllers" type="ish_imp_controllers.py" 
+			output="screen" respawn="false"/>
+			<param name="implementcontrollersdata" value="/fmSignals/impConDat"/>
+		
+		
+		</group>
+	
+		<group ns="fmExecutors">
+		
+		<!-- brief description of each node -->
+			
+			<node pkg="ishan_platformExecutors" name="ish_platf_executors" type="ish_platf_executors.py" 
+			output="screen" respawn="false"/>
+			<param name="platformexecutorsdata" value="/fmCommands/plaExeDat"/>
+		
+			<node pkg="ishan_implementExecutors" name="ish_imp_executors" type="ish_imp_executors.py" 
+			output="screen" respawn="false"/>
+			<param name="implementexecutorsdata" value="/fmCommands/impExeDat"/>
+		
+		</group>
+		
+		<group ns="fmSafety">
+		
+		<!-- brief description of each node -->
+			
+			<node pkg="ish_incidenthandler" name="ish_incidenthandler" type="ish_incidenthandler.py" 
+			output="screen" respawn="false"/>
+			<param name="incidenthandlerdata" value="/fmSafety/incHanDat"/>
+			
+			<node pkg="ishan_watchdog" name="ish_watchdog" type="ish_watchdog.py" 
+			output="screen" respawn="false"/>
+			<param name="watchdogdata" value="/fmSafety/watDogDat"/>
+			
+			<node pkg="ishan_fault_diagnosis" name="ish_fault_diagnosis" type="ish_fault_diagnosis.py" 
+			output="screen" respawn="false"/>
+			<param name="faultdiagnosisdata" value="/fmSafety/fauDiaDat"/>
+		
+		
+		</group>
+		
+		<group ns="fmLib">
+		<!-- brief description of each node -->
+		</group>
+		
+		<group ns="transforms">
+		<!-- brief description of each node -->
+		</group>
+		
+		<group ns="external">
+		<!-- brief description of each node -->
+		</group>
+
+
+</launch>
+
+
+		
+		
+		

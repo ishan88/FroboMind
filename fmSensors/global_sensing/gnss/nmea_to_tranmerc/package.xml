@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>nmea_to_tranmerc</name>
+  <version>0.0.0</version>
+  <description>The gpgga_to_tranmerc package</description>
+
+  <maintainer email="kjeld@frobomind.org">Kjeld Jensen, FroboLab</maintainer>
+  <license>BSD 3-Clause</license>
+  <url type="website">http://www.frobomind.org</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>transverse_mercator</build_depend>
+  <run_depend>msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>transverse_mercator</run_depend>
+
+</package>
