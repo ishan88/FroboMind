@@ -512,3 +512,10 @@ Kp: 0.1
 Ki: 0.0
 Kd: 0.0
 ff: 0.0
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 14:40:10 2015
+Kp: 0.8
+Ki: 0.8
+Kd: 0.5
+ff: 0.02

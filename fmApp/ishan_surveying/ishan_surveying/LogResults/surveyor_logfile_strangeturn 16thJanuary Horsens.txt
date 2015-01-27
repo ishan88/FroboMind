@@ -35388,3 +35388,7 @@ Target[N]
 Target_Heading_Error
 -0.602448789522
 
+ 
+ Kjeld's Algorithm Results.
+Thu Jan 22 14:40:10 2015
+ Time 
